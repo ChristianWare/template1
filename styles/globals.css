@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
 
 :root {
-  --heading: #343F56;
+  --accent1: #343F56;
   --text: #4f6e8f;
   --accent2: #F54748;
   --accent3: #FB9300;
-  --background: #F5E6CA;
+  --accent4: #F5E6CA;
 }
 
 * {
