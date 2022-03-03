@@ -11,7 +11,7 @@
 
 .btnText {
     position: relative;
-    color: var(--accent4);
+    
     font-weight: 2rem;
     font-weight: bold;
     text-align: center;
@@ -32,4 +32,21 @@
 .tertiary {
 background-color: var(--accent3);
 transition: 0.4s ease-in-out;
+}
+
+.primaryOutline {
+    background-color: transparent;
+    border: 2px solid var(--accent1);
+    color: var(--accent1);
+}
+
+.secondaryOutline {
+    background-color: transparent;
+    border: 2px solid var(--accent2);
+    color: var(--accent2);
+}
+.tertiaryOutline {
+    background-color: transparent;
+    border: 2px solid var(--accent3);
+    color: var(--accent3);
 }

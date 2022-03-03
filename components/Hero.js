@@ -18,6 +18,9 @@ function Hero() {
             <Button text='CTA BTN' href='/' color='primary' />
             <Button text='CTA BTN' href='/' color='secondary' />
             <Button text='CTA BTN' href='/' color='tertiary' />
+            <Button text='CTA BTN' href='/' color='primaryOutline' />
+            <Button text='CTA BTN' href='/' color='secondaryOutline' />
+            <Button text='CTA BTN' href='/' color='tertiaryOutline' />
           </div>
         </div>
       </div>
