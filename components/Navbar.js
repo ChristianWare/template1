@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 import { RiVipCrownFill } from "react-icons/ri";
@@ -7,6 +7,11 @@ import { motion } from "framer-motion";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
+
+   useEffect(() => {
+     const body = document.querySelector("body");
+     body.style.overflow = isOpen ? "hidden" : "auto";
+   }, [isOpen]);
 
   return (
     <header className={styles.header}>

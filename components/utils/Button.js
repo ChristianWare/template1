@@ -1,4 +1,4 @@
-import styles from "../styles/Buton.module.css";
+import styles from "../../styles/Button.module.css";
 import Link from "next/link";
 
 function Button({ text, href = "", icon= "", color="primary" }) {

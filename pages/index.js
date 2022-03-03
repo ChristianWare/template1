@@ -20,6 +20,11 @@ export default function Home() {
           <ScrollToTop />
           <Navbar />
           <Hero />
+          <Hero />
+          <Hero />
+          <Hero />
+          <Hero />
+          <Hero />
         </motion.main>
       </div>
     </div>

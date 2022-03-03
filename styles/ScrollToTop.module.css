@@ -1,5 +1,5 @@
 .scrollToTop {
-    background-color: red;
+    background-color: var(--accent1);
     border-radius: 100%;
     position: fixed;
     height: 7rem;

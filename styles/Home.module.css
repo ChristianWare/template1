@@ -1,6 +1,6 @@
 .background {
   background-color: var(--accent4);
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   overflow: hidden;
    width: 100%;

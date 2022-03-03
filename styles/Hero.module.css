@@ -1,7 +1,9 @@
 
 .btnContainer {
-    width: 100%;
+    width: auto;
     display: flex;
-    gap: 5rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
  
 }

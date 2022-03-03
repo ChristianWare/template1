@@ -1,5 +1,6 @@
 .btn {
     position: relative;
+    width: auto;
     border-radius: 8px;
     color: var(--accent4);
     padding: 15px 45px;
@@ -11,7 +12,6 @@
 
 .btnText {
     position: relative;
-    
     font-weight: 2rem;
     font-weight: bold;
     text-align: center;
