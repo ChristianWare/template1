@@ -1,7 +1,8 @@
 .header {
   border-bottom: 1px solid var(--accent1);  
   z-index: 999;
-  background-color: transparent;
+  /* background-color: transparent; */
+  
 }
 
 .navbar {
@@ -71,7 +72,7 @@
     text-align: center;
     font-weight: bold;
     transition: 0.3s;
-    border: 5px solid var(--accent1);
+    border: 4px solid var(--accent1);
     
     /* background-color: rgba(0, 0, 0, 0.2); */
     color: #fff;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 import { RiVipCrownFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,0 +1,35 @@
+.btn {
+    position: relative;
+    border-radius: 8px;
+    color: var(--accent4);
+    padding: 15px 45px;
+    border-radius: 5px 5px 25px 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+.btnText {
+    position: relative;
+    color: var(--accent4);
+    font-weight: 2rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+.primary {
+    background-color: var(--accent1);
+    transition: 0.4s ease-in-out;
+}
+
+.secondary {
+    background-color: var(--accent2);
+    transition: 0.4s ease-in-out;
+}
+
+.tertiary {
+background-color: var(--accent3);
+transition: 0.4s ease-in-out;
+}
