@@ -22,15 +22,26 @@ function Hero() {
           </div>
         </div>
         <div className={styles.contentRight}>
-          <picture>
+          <div className={styles.imageContainer1}>
+            {/* <Image
+              src={img1}
+              alt=''
+              width={500}
+              height={500}
+              objectFit='cover'
+              className={styles.heroImage}
+            /> */}
+          </div>
+          <div className={styles.imageContainer2}>
             <Image
               src={img1}
               alt=''
-              width={367}
+              width={400}
               height={500}
+              objectFit='cover'
               className={styles.heroImage}
             />
-          </picture>
+          </div>
         </div>
       </div>
     </header>
