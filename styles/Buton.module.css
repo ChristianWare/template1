@@ -3,7 +3,7 @@
     border-radius: 8px;
     color: var(--accent4);
     padding: 15px 45px;
-    border-radius: 5px 5px 25px 5px;
+    border-radius: 0px 0px 25px 0px;
     text-transform: uppercase;
     overflow: hidden;
     transition: 0.4s ease-in-out;
