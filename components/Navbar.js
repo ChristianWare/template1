@@ -3,15 +3,16 @@ import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 import { RiVipCrownFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import Button from "./utils/Button";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
 
-   useEffect(() => {
-     const body = document.querySelector("body");
-     body.style.overflow = isOpen ? "hidden" : "auto";
-   }, [isOpen]);
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
 
   return (
     <header className={styles.header}>
@@ -50,7 +51,23 @@ function Navbar() {
               <a onClick={openMenu}>Item 4</a>
             </Link>
           </li>
+          <div className={styles.btnContainerMobile}>
+            <Button
+              href='/'
+              text='Mobile'
+              color='primaryOutline'
+              btnSz='small'
+            />
+          </div>
         </ul>
+        <div className={styles.btnContainerDesktop}>
+          <Button
+            href='/'
+            text='Desktop'
+            color='primaryOutline'
+            btnSz='small'
+          />
+        </div>
         <span
           className={
             isOpen === false

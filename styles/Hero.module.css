@@ -1,9 +1,34 @@
+.heroContainer {
+    /* background-image: linear-gradient(to top left, #e394a3 50%, #8dd6a6 50%); */
+    height: 100vh;
+}
+
+.content1 {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 5rem;
+}
+
+.content1A {
+    color: var(--accent1);
+    text-transform: uppercase;
+}
+.content1A h1 {
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.description {
+    color: var(--text);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
 
 .btnContainer {
     width: auto;
     display: flex;
     align-items: center;
-    flex-direction: column;
     gap: 3rem;
- 
 }

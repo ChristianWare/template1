@@ -6,21 +6,17 @@ function Hero() {
     <header className={styles.heroContainer}>
       <div className={styles.content1}>
         <div className={styles.content1A}>
-          <h1>Main headline, put top keyword here</h1>
+          <h1>Main headline, put top keyword here.</h1>
         </div>
         <div className={styles.content1B}>
-          <p>
+          <p className={styles.description}>
             Expand on the keyword with more keywords and add a list of related
             services that you do and include the city, state of your service
             area.
           </p>
           <div className={styles.btnContainer}>
-            <Button text='CTA BTN' href='/' color='primary' />
-            <Button text='CTA BTN' href='/' color='secondary' />
-            <Button text='CTA BTN' href='/' color='tertiary' />
-            <Button text='CTA BTN' href='/' color='primaryOutline' />
-            <Button text='CTA BTN' href='/' color='secondaryOutline' />
-            <Button text='CTA BTN' href='/' color='tertiaryOutline' />
+            <Button text='contact' href='/' color='primary' />
+            <Button text='services' href='/' color='primaryOutline' />
           </div>
         </div>
       </div>

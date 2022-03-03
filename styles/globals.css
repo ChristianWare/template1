@@ -69,6 +69,15 @@ input {
   background: var(--accent3);
 } */
 
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--accent4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent1);
+}
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 55%;

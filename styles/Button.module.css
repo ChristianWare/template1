@@ -1,18 +1,27 @@
 .btn {
     position: relative;
+    display: flex;
     width: auto;
     border-radius: 8px;
     color: var(--accent4);
-    padding: 15px 45px;
     border-radius: 0px 0px 25px 0px;
     text-transform: uppercase;
     overflow: hidden;
     transition: 0.4s ease-in-out;
 }
 
+.large {
+    padding: 15px 45px;
+}
+
+.small {
+    padding: 8px 38px;
+}
+
 .btnText {
     position: relative;
     font-weight: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
     white-space: nowrap;

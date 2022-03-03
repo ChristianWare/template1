@@ -2,7 +2,6 @@
   border-bottom: 1px solid var(--accent1);  
   z-index: 999;
   /* background-color: transparent; */
-  
 }
 
 .navbar {
@@ -19,6 +18,11 @@
   color: var(--accent1)
 }
 
+.navbarLogo a {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .navbarIcon {
   font-size: 2rem;
   margin-right: 1rem;
@@ -26,10 +30,7 @@
   top: 0.3rem;
 }
 
-.navbarLogo a {
-  font-size: 2rem;
-  font-weight: bold;
-}
+
 
 .hamburger {
   display: none;
@@ -57,7 +58,16 @@
 
 .navItem {
   margin-left: 5rem;
-  color: var(--accent1)
+  color: var(--accent1);
+  font-weight: bold;
+}
+
+.btnContainerDesktop {
+  display: flex;
+}
+
+.btnContainerMobile {
+  display: none;
 }
 
 @media screen and (max-width: 953px) {
@@ -77,7 +87,7 @@
     
     /* background-color: rgba(0, 0, 0, 0.2); */
     color: #fff;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
   }
 
   .navItem a:hover::before {
@@ -87,6 +97,14 @@
   .navmenu.active {
     left: 0%;
     background-attachment: fixed;
+  }
+
+  .btnContainerMobile {
+    display: flex;
+  }
+
+  .btnContainerDesktop {
+    display: none;
   }
 
    .hamburger {

@@ -1,13 +1,11 @@
 import styles from "../../styles/Button.module.css";
 import Link from "next/link";
 
-function Button({ text, href = "", icon= "", color="primary" }) {
-
+function Button({ text, href = "", color = "primary", btnSz = "large" }) {
   return (
     <Link href={href}>
-      <a className={`${styles.btn} ${styles[color]}`}>
+      <a className={`${styles.btn} ${styles[color]} ${styles[btnSz]}`}>
         <p className={styles.btnText}>{text}</p>
-        <span className={styles.icon}>{icon}</span>
       </a>
     </Link>
   );
