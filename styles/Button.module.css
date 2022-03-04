@@ -31,16 +31,13 @@
 .primary {
     background-color: var(--accent1);
     transition: 0.4s ease-in-out;
+    border: solid 2px var(--accent1);
+    border-radius: 0px 0px 0px 25px;
 }
 
-.secondary {
-    background-color: var(--accent2);
-    transition: 0.4s ease-in-out;
-}
-
-.tertiary {
-background-color: var(--accent3);
-transition: 0.4s ease-in-out;
+.primary:hover {
+    background-color: var(--accent4);
+    color: var(--accent1);
 }
 
 .primaryOutline {
@@ -48,6 +45,25 @@ transition: 0.4s ease-in-out;
     border: 2px solid var(--accent1);
     color: var(--accent1);
 }
+
+.primaryOutline:hover {
+    background-color: var(--accent1);
+    color: var(--accent4);
+}
+
+.secondary {
+    background-color: var(--accent2);
+    transition: 0.4s ease-in-out;
+}
+
+
+
+.tertiary {
+background-color: var(--accent3);
+transition: 0.4s ease-in-out;
+}
+
+
 
 .secondaryOutline {
     background-color: transparent;
@@ -58,4 +74,10 @@ transition: 0.4s ease-in-out;
     background-color: transparent;
     border: 2px solid var(--accent3);
     color: var(--accent3);
+}
+
+@media screen and (max-width: 360px) {
+    .large {
+        padding: 10px 35px;
+    }
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/Hero.module.css";
 import Button from "./utils/Button";
-import img1 from "../public/images/b3.jpg";
+import img1 from "../public/images/b4.jpg";
 
 function Hero() {
   return (
