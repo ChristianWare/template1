@@ -4,6 +4,7 @@ import styles from "../styles/Services.module.css";
 import b1 from '../public/images/b1.jpg'
 import b2 from '../public/images/b2.jpg'
 import b3 from '../public/images/b3.jpg'
+import { CgArrowLongRight } from 'react-icons/cg'
 
 function Services() {
   return (
@@ -11,7 +12,10 @@ function Services() {
       <div className={styles.topContent}>
         <h2>Our Services</h2>
         <Link href='/'>
-          <a>Explore our services</a>
+          <span className={styles.link}>
+            <a>See All Services</a>
+            <CgArrowLongRight className={styles.icon} />
+          </span>
         </Link>
       </div>
       <div className={styles.bottomContent}>
