@@ -22,14 +22,15 @@ function Services() {
             Consequuntur voluptate nam quas? Veritatis, dolorem, incidunt.
           </p>
           <div className={styles.placeHolderImage}>
-            <Image
+            {/* <Image
               src={b3}
               alt=''
               width={350}
               height={350}
               objectFit='cover'
               className={styles.img}
-            />
+            /> */}
+            <div className={styles.circle}></div>
           </div>
         </div>
         <div className={styles.cardTwo}>
@@ -39,14 +40,15 @@ function Services() {
             Consequuntur voluptate nam quas? Veritatis, dolorem, incidunt.
           </p>
           <div className={styles.placeHolderImage}>
-            <Image
+            {/* <Image
               src={b2}
               alt=''
               width={3500}
               height={3500}
               objectFit='cover'
               className={styles.img}
-            />
+            /> */}
+            <div className={styles.circle2}></div>
           </div>
         </div>
         <div className={styles.cardThree}>
@@ -56,14 +58,15 @@ function Services() {
             Consequuntur voluptate nam quas? Veritatis, dolorem, incidunt.
           </p>
           <div className={styles.placeHolderImage}>
-            <Image
+            {/* <Image
               src={b1}
               alt=''
               width={350}
               height={350}
               objectFit='cover'
               className={styles.img}
-            />
+            /> */}
+            <div className={styles.circle3}></div>
           </div>
         </div>
       </div>

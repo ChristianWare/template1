@@ -63,6 +63,7 @@
     /* hyphens: auto; */
     /* word-break: break-all; */
     /* width: 90%; */
+    
 }
 
 .placeHolderImage {
@@ -70,12 +71,29 @@
     margin-top: 3rem;
 }
 
+.circle {
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 15px solid aqua
+}
+
+.circle2 {
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 15px solid aqua
+}
+
+.circle3 {
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 15px solid aqua;
+}
+
 /* .img {
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-right-radius: 50%;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 61%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 61%, 0% 100%);
+    
 } */
 
 @media screen and (max-width: 1000px) {

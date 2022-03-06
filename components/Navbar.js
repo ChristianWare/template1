@@ -9,10 +9,10 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
 
-  // useEffect(() => {
-  //   const body = document.querySelector("body");
-  //   body.style.overflow = isOpen ? "hidden" : "visible";
-  // }, [isOpen]);
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    document.body.style.paddingRight = isOpen ? "15px" : "0px";
+  }, [isOpen]);
 
   return (
     <header className={styles.header}>
