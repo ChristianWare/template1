@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
+import Services from "../components/Services";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
           <ScrollToTop />
           <Navbar />
           <Hero />
-          
+          <Services />
         </motion.main>
       </div>
     </div>
