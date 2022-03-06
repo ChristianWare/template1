@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/Hero.module.css";
 import Button from "./utils/Button";
-import img1 from "../public/images/b4.jpg";
+import img1 from "../public/images/b3.jpg";
 
 function Hero() {
   return (
@@ -22,16 +22,6 @@ function Hero() {
           </div>
         </div>
         <div className={styles.contentRight}>
-          <div className={styles.imageContainer1}>
-            {/* <Image
-              src={img1}
-              alt=''
-              width={500}
-              height={500}
-              objectFit='cover'
-              className={styles.heroImage}
-            /> */}
-          </div>
           <div className={styles.imageContainer2}>
             <Image
               src={img1}
