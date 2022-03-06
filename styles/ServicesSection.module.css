@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 15rem;
     background-color: var(--accent);
 }
 

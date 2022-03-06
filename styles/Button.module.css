@@ -36,7 +36,7 @@
 }
 
 .primary:hover {
-    background-color: var(--accent4);
+    background-color: transparent;
     color: var(--accent1);
 }
 
