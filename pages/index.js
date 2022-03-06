@@ -5,7 +5,8 @@ import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
-import Services from "../components/Services";
+import ServicesSection from "../components/ServicesSection";
+import AboutSection from "../components/AboutSection";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
           <ScrollToTop />
           <Navbar />
           <Hero />
-          <Services />
+          <ServicesSection />
+          <AboutSection />
         </motion.main>
       </div>
     </div>

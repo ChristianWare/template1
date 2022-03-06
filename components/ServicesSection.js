@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Services.module.css";
+import styles from "../styles/ServicesSection.module.css";
 import b1 from '../public/images/b1.jpg'
 import b2 from '../public/images/b2.jpg'
 import b3 from '../public/images/b3.jpg'
 import { CgArrowLongRight } from 'react-icons/cg'
 
-function Services() {
+function ServicesSection() {
   return (
     <section className={styles.servicesContainer}>
       <div className={styles.topContent}>
@@ -78,4 +78,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default ServicesSection;
