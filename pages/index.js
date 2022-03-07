@@ -7,6 +7,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
 import ServicesSection from "../components/ServicesSection";
 import AboutSection from "../components/AboutSection";
+import Photos from "../components/Photos";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           <Hero />
           <ServicesSection />
           <AboutSection />
+          <Photos />
         </motion.main>
       </div>
     </div>

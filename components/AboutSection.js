@@ -2,10 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { CgArrowLongRight } from 'react-icons/cg'
 import styles from "../styles/AboutSection.module.css";
-import Button from "./utils/Button";
 import b6 from "../public/images/b6.jpg";
-import b7 from "../public/images/b7.jpg";
-import b8 from "../public/images/b8.jpg";
+
 
 function AboutSection() {
   return (

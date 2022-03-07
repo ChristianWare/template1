@@ -4,10 +4,10 @@
     margin-bottom: 15rem;
     color: var(--accent1);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 5rem;
-    border: solid 1px var(--accent1);
+    /* border: solid 1px var(--accent1); */
 }
 
 .contentLeft {
