@@ -30,8 +30,6 @@
   top: 0.3rem;
 }
 
-
-
 .hamburger {
   display: none;
 }
@@ -44,7 +42,6 @@
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   background-color: var(--accent1);
-
 }
 
 .navmenu {
@@ -52,6 +49,7 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  transition: none;
   z-index: 999;
   white-space: nowrap;
 }
