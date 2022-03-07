@@ -25,11 +25,18 @@
 .box2, 
 .box3,
 .box4, 
-.box5 {
+.box5,
+.box1B,
+.box2B,
+.box3B,
+.box4B,
+.box5B
+{
     position: relative;
 }
 
-.box3 {
+.box3,
+.box3B {
     background-color: var(--accent2);
     color: var(--accent4);
     display: flex;
@@ -39,7 +46,19 @@
     padding: 3rem 3rem 1rem 2rem ;
 }
 
-.box4 {
+.box2B {
+   background-color: var(--accent1);
+   color: var(--accent4);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding: 3rem 3rem 1rem 2rem;
+}
+
+.box4,
+.box4B
+{
     background-color: var(--accent3);
     color: var(--accent1);
     display: flex;
@@ -53,6 +72,27 @@
     font-size: 4rem;
 }
 
+.boxContainer2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "oneB twoB threeB"
+    "fourB fiveB threeB";
+    grid-template-columns: 25% 30% 45%;
+    margin-top: 1rem;
+}
+
+.box1B {
+    grid-area: oneB;
+}
+
+.box3B {
+    grid-area: threeB;
+    height: 450px;
+}
+
+
+
 @media screen and (max-width: 868px) {
     .boxContainer {
         grid-template-areas:
@@ -62,7 +102,18 @@
         grid-template-columns: 50% 50%;
     }
 
-    .box1 {
+    .boxContainer2 {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "threeB threeB"
+            "oneB twoB"
+            "fourB fiveB";
+        grid-template-columns: 50% 50%;
+    }
+
+
+    .box1, .box3B {
         height: 300px;
     }
 }
