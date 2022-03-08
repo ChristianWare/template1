@@ -35,15 +35,20 @@
     justify-content: center;
 }
 
+.img1, .img2 {
+    position: relative;
+}
+
 .img1 {
     grid-area: one;
     height: 200px;
-    border: 1px solid var(--accent1);
 }
 
 .testBox1 {
     grid-area: two;
-    border: 1px solid var(--accent1);
+    background-color: var(--accent2);
+    color: var(--accent4);
+    padding: 2rem;
 }
 
  .bottomContentB {
@@ -59,13 +64,20 @@
 
 .testBox2 {
     grid-area: three;
-    border:1px solid var(--accent1);
+    padding: 2rem;
+    background-color: var(--accent3);
+    color: var(--accent1);
 }
 
 .img2 {
     grid-area: four;
-    border: 1px solid var(--accent1);
     height: 200px;
+}
+
+.testBox3 {
+    padding: 2rem;
+    background-color: var(--accent1);
+    color: var(--accent4);
 }
 
 @media screen and (max-width: 868px) {

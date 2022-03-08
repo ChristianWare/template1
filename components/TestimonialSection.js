@@ -2,6 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/TestimonialSection.module.css";
 import { CgArrowLongRight } from "react-icons/cg";
+import b12 from '../public/images/b12.jpg'
+import b13 from '../public/images/b13.jpg'
+import b14 from '../public/images/b14.jpg'
 
 function TestimonialSection() {
   return (
@@ -17,7 +20,9 @@ function TestimonialSection() {
       </div>
       <div className={styles.bottomContent}>
         <div className={styles.bottomContentA}>
-          <picture className={styles.img1}>Image Goes Here</picture>
+          <picture className={styles.img1}>
+            <Image src={b14} layout='fill' objectFit='cover' />
+          </picture>
           <div className={styles.testBox1}>
             <p className={styles.test}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
@@ -34,11 +39,15 @@ function TestimonialSection() {
               Animi, doloremque.
             </p>
           </div>
-          <picture className={styles.img2}>Image Goes Here</picture>
+          <picture className={styles.img2}>
+            <Image src={b13} layout='fill' objectFit='cover' />
+          </picture>
         </div>
         <div className={styles.bottomContentA}>
-          <picture className={styles.img1}>Image Goes Here</picture>
-          <div className={styles.testBox1}>
+          <picture className={styles.img1}>
+            <Image src={b12} layout='fill' objectFit='cover' />
+          </picture>
+          <div className={styles.testBox3}>
             <p className={styles.test}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
               rerum, dolor veritatis animi adipisci ratione maxime nisi sunt.
