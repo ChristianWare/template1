@@ -9,6 +9,7 @@ import ServicesSection from "../components/ServicesSection";
 import AboutSection from "../components/AboutSection";
 import Photos from "../components/Photos";
 import TestimonialSection from "../components/TestimonialSection";
+import ContactSection from "../components/ContactSection";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           <AboutSection />
           <Photos />
           <TestimonialSection />
+          <ContactSection />
         </motion.main>
       </div>
     </div>

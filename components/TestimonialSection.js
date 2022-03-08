@@ -26,8 +26,7 @@ function TestimonialSection() {
           <div className={styles.testBox1}>
             <p className={styles.test}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-              rerum, dolor veritatis animi adipisci ratione maxime nisi sunt.
-              Animi, doloremque.
+              rerum.
             </p>
           </div>
         </div>
@@ -35,8 +34,7 @@ function TestimonialSection() {
           <div className={styles.testBox2}>
             <p className={styles.test}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-              rerum, dolor veritatis animi adipisci ratione maxime nisi sunt.
-              Animi, doloremque.
+              rerum.
             </p>
           </div>
           <picture className={styles.img2}>
@@ -50,10 +48,20 @@ function TestimonialSection() {
           <div className={styles.testBox3}>
             <p className={styles.test}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-              rerum, dolor veritatis animi adipisci ratione maxime nisi sunt.
-              Animi, doloremque.
+              rerum, dolor.
             </p>
           </div>
+        </div>
+        <div className={styles.bottomContentB}>
+          <div className={styles.testBox2}>
+            <p className={styles.test}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              rerum.
+            </p>
+          </div>
+          <picture className={styles.img2}>
+            <Image src={b13} layout='fill' objectFit='cover' />
+          </picture>
         </div>
       </div>
     </section>

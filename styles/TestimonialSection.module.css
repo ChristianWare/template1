@@ -11,6 +11,10 @@
     margin-bottom: 5rem;
 }
 
+.topContent h2 {
+    text-transform: uppercase;
+}
+
 .link {
     display: flex;
     justify-content: flex-end;
@@ -19,6 +23,7 @@
     font-size: 2rem;
     font-weight: 400;
     cursor: pointer;
+    text-transform: uppercase;
     
 }
 
@@ -41,13 +46,13 @@
 
 .img1 {
     grid-area: one;
-    height: 200px;
+    height: 125px;
 }
 
 .testBox1 {
     grid-area: two;
-    background-color: var(--accent2);
-    color: var(--accent4);
+    border: 1px solid var(--accent1);
+    color: var(--accent1);
     padding: 2rem;
 }
 
@@ -57,7 +62,7 @@
     grid-template-areas: 
     "three four";
     grid-template-columns: 50% 20%;
-    /* justify-content: end; */
+    justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -65,19 +70,19 @@
 .testBox2 {
     grid-area: three;
     padding: 2rem;
-    background-color: var(--accent3);
+    border: 1px solid var(--accent1);
     color: var(--accent1);
 }
 
 .img2 {
     grid-area: four;
-    height: 200px;
+    height: 125px;
 }
 
 .testBox3 {
     padding: 2rem;
-    background-color: var(--accent1);
-    color: var(--accent4);
+    border: 1px solid var(--accent1);
+    color: var(--accent1);
 }
 
 @media screen and (max-width: 868px) {

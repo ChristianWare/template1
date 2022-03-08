@@ -23,7 +23,7 @@ function Photos() {
         </div>
         <div className={styles.box3}>
           <h5>Beards</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur.</p>
+          
           <Link href='/'>
             <a>
               <CgArrowLongRight className={styles.icon} />
@@ -32,7 +32,7 @@ function Photos() {
         </div>
         <div className={styles.box4}>
           <h5>Hair Cuts</h5>
-          <p>Lorem ipsum dolor sit, amet consec.</p>
+          
           <Link href='/'>
             <a>
               <CgArrowLongRight className={styles.icon} />
@@ -49,10 +49,7 @@ function Photos() {
         </div>
         <div className={styles.box2B}>
           <h5>Beards</h5>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad totam
-            voluptates!
-          </p>
+         
           <Link href='/'>
             <a>
               <CgArrowLongRight className={styles.icon} />
@@ -64,7 +61,7 @@ function Photos() {
         </div>
         <div className={styles.box4B}>
           <h5>Hair Cuts</h5>
-          <p>Lorem ipsum dolor sit, amet consec.</p>
+          
           <Link href='/'>
             <a>
               <CgArrowLongRight className={styles.icon} />

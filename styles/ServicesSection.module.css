@@ -13,6 +13,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     color: var(--accent1);
+    text-transform: uppercase;
 }
 
 .link {
@@ -55,14 +56,14 @@
 }
 
 .cardTwo {
-    margin-top: 20rem;
+    margin-top: 5rem;
     background-color: var(--accent4);
     color: var(--accent1);
     border: solid 1px var(--accent1);
 }
 
 .cardThree {
-    margin-top: 40rem;
+    margin-top: 10rem;
     background-color: var(--accent4);
     color: var(--accent1);
     border: solid 1px var(--accent2);
@@ -87,23 +88,23 @@
 }
 
 .circle {
-    width:250px;
-    height: 250px;
+    width:175px;
+    height: 175px;
     border-radius: 50%;
     border: 15px solid var(--accent4);
 }
 
 .circle2 {
-    width:250px;
-    height: 250px;
+    width:175px;
+    height: 175px;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
     border: 15px solid var(--accent1);
 }
 
 .circle3 {
-    width:250px;
-    height: 250px;
+    width:175px;
+    height: 175px;
     border: 15px solid var(--accent2)
 }
 
@@ -111,26 +112,26 @@
     
 } */
 
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
     .circle,
     .circle2,
     .circle3 {
         width: 225px;
         height: 225px;
     }
-}
+} */
 
 @media screen and (max-width: 1000px) {
     .bottomContent {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .circle,
+    /* .circle,
     .circle2,
     .circle3 {
         width: 200px;
         height: 200px;
-    }
+    } */
 
     .cardTwo, .cardThree {
         margin-top: 0rem;

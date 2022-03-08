@@ -22,7 +22,7 @@ function AboutSection() {
       </div>
       <div className={styles.contentRight}>
         <div className={styles.contentRightA}>
-          <h2>This Is Our Origin Story</h2>
+          <h2>Our Origin Story</h2>
 
           <div className={styles.btnContainer}>
             <Link href='/'>
