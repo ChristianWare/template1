@@ -16,6 +16,10 @@
     text-transform: uppercase;
 }
 
+.topContent h2 {
+    text-align: right;
+}
+
 .link {
     display: flex;
     justify-content: flex-end;
@@ -31,12 +35,9 @@
 }
 
 .bottomContent {
-    /* display: flex;
-    justify-content: center;
-    gap: 3rem; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
+    grid-gap: 1rem;
 }
 
 .cardOne, .cardTwo, .cardThree {

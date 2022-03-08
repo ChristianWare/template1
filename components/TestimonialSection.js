@@ -52,17 +52,6 @@ function TestimonialSection() {
             </p>
           </div>
         </div>
-        <div className={styles.bottomContentB}>
-          <div className={styles.testBox2}>
-            <p className={styles.test}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-              rerum.
-            </p>
-          </div>
-          <picture className={styles.img2}>
-            <Image src={b13} layout='fill' objectFit='cover' />
-          </picture>
-        </div>
       </div>
     </section>
   );

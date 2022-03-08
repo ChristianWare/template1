@@ -42,11 +42,11 @@
 
 .img1, .img2 {
     position: relative;
+    height: 175px;
 }
 
 .img1 {
     grid-area: one;
-    height: 125px;
 }
 
 .testBox1 {
@@ -76,7 +76,6 @@
 
 .img2 {
     grid-area: four;
-    height: 125px;
 }
 
 .testBox3 {
@@ -89,5 +88,13 @@
     .bottomContentA, .bottomContentB {
         grid-template-columns: 50% 50%;
         justify-content: end;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img1,
+    .img2 {
+        position: relative;
+        height: 135px;
     }
 }
