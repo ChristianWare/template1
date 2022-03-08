@@ -76,8 +76,14 @@ transition: 0.2s ease-in-out;
     color: var(--accent3);
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
     .large {
         padding: 10px 35px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .large {
+        padding: 8px 25px;
     }
 }

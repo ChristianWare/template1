@@ -9,10 +9,14 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
 
-  // useEffect(() => {
-  //   const body = document.querySelector("body");
-  //   body.style.overflow = isOpen ? "hidden" : "auto";
-  // }, [isOpen]);
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (window.innerWidth <= 953 && isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
+  }, [isOpen]);
 
   return (
     <header className={styles.header}>
@@ -56,7 +60,7 @@ function Navbar() {
               href='/'
               text='Mobile'
               color='primaryOutline'
-              btnSz='small'
+              btnSz='large'
             />
           </div>
         </ul>

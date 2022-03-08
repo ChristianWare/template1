@@ -62,8 +62,6 @@
 .imageContainer2 {
     position: relative;
     z-index: 1;
-    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 61%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 61%, 0% 100%); */
 }
 
 .imageContainer2::after {
@@ -78,18 +76,11 @@
     margin-top: 5rem;
     background: repeating-linear-gradient(-45deg,
         var(--accent1),
-        var(--accent1) 25px,
-        var(--accent4) 25px,
-        var(--accent4) 30px,
-        var(--accent4) 50px);    
+        var(--accent1) 10px,
+        var(--accent4) 10px,
+        var(--accent4) 10px,
+        var(--accent4) 20px);    
 }
-/* 
-@media screen and (max-width: 975px) {
-    .contentLeft {
-        margin-top: 2rem;
-    }
-} */
-
 
 @media screen and (max-width: 953px) {
     .content {
@@ -125,6 +116,14 @@
     .imageContainer2::after {
         bottom: -30px;
         left: -30px;
+    }
+
+    .heading {
+        font-size: 4.5rem;
+    }
+    
+    .description {
+        font-size: 2rem;
     }
 }
 

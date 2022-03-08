@@ -70,20 +70,25 @@
 
 @media screen and (max-width: 953px) {
   .navmenu {
-    position: absolute;
+    position: fixed;
     left: -100%;
     top: 0;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
     width: 100%;
     height: 100vh;
     text-align: center;
     font-weight: bold;
     transition: 0.3s;
-    border: 4px solid var(--accent1);
+    background-color: var(--accent3);
     color: #fff;
-    backdrop-filter: blur(10px);
-  }
+    }
+
+    .navItem {
+      margin-bottom: 3rem;
+      font-size: 3rem;
+    }
 
   .navItem a:hover::before {
       width: 0%;
@@ -95,7 +100,8 @@
   }
 
   .btnContainerMobile {
-    display: flex;
+    display: block;
+    margin-left: 5rem;
   }
 
   .btnContainerDesktop {

@@ -46,9 +46,7 @@
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 61%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 61%, 0% 100%);
-     */
+
 }
 
 .cardOne {
