@@ -1,0 +1,73 @@
+.testContainer {
+    margin-bottom: 15rem;
+}
+
+.topContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: var(--accent1);
+    margin-bottom: 5rem;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 4rem;
+}
+
+.bottomContentA {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "one two";
+    grid-template-columns: 20% 50%;
+    justify-content: center;
+}
+
+.img1 {
+    grid-area: one;
+    height: 200px;
+    border: 1px solid var(--accent1);
+}
+
+.testBox1 {
+    grid-area: two;
+    border: 1px solid var(--accent1);
+}
+
+ .bottomContentB {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "three four";
+    grid-template-columns: 50% 20%;
+    justify-content: end;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testBox2 {
+    grid-area: three;
+    border:1px solid var(--accent1);
+}
+
+.img2 {
+    grid-area: four;
+    border: 1px solid var(--accent1);
+    height: 200px;
+}
+
+@media screen and (max-width: 868px) {
+    .bottomContentA, .bottomContentB {
+        grid-template-columns: 50% 50%;
+        justify-content: end;
+    }
+}
