@@ -19,6 +19,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
     gap: 1rem;
     cursor: pointer;
 }

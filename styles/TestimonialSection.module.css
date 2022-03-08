@@ -16,7 +16,10 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
     cursor: pointer;
+    
 }
 
 .icon {
@@ -49,7 +52,7 @@
     grid-template-areas: 
     "three four";
     grid-template-columns: 50% 20%;
-    justify-content: end;
+    /* justify-content: end; */
     margin-top: 1rem;
     margin-bottom: 1rem;
 }

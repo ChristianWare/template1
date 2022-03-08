@@ -11,11 +11,11 @@ function Hero() {
           <h1 className={styles.heading}>
             Main headline, put top keyword here.
           </h1>
-          <p className={styles.description}>
+          <h5 className={styles.description}>
             Expand on the keyword with more keywords and add a list of related
             services that you do and include the city, state of your service
             area.
-          </p>
+          </h5>
           <div className={styles.btnContainer}>
             <Button text='contact' href='/' color='primary' />
             <Button text='services' href='/' color='primaryOutline' />

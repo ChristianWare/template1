@@ -80,6 +80,8 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
     cursor: pointer;
 }
 
