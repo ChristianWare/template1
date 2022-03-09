@@ -51,12 +51,6 @@ function ContactSection() {
             <li>
               <FiYoutube className={styles.icon} />
             </li>
-            <li>
-              <FaLinkedinIn className={styles.icon} />
-            </li>
-            <li>
-              <ImPinterest2 className={styles.icon} />
-            </li>
           </ul>
         </div>
         <div className={styles.contactForm}>
@@ -83,7 +77,7 @@ function ContactSection() {
               <span>Your Message Here...</span>
             </div>
             <div className={styles.btnContainer}>
-              <Button text='Submit' color='secondary' />
+              <Button text='Submit' color='tertiary' />
             </div>
           </div>
         </div>

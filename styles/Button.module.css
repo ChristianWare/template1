@@ -1,6 +1,8 @@
 .btn {
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: auto;
     border-radius: 8px;
     color: var(--accent4);
@@ -56,14 +58,11 @@
     transition: 0.2s ease-in-out;
 }
 
-
-
 .tertiary {
 background-color: var(--accent3);
+color: var(--accent1);
 transition: 0.2s ease-in-out;
 }
-
-
 
 .secondaryOutline {
     background-color: transparent;

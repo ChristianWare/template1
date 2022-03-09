@@ -18,7 +18,7 @@
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background-color: var(--accent2);
+    background-color: var(--accent3);
     z-index: 1;
     padding: 40px;
     display: flex;
@@ -28,9 +28,9 @@
 }
 
 .contactInfo h2 {
-    font-size: 2.4rem;
-    font-weight: 500;
-    color: var(--accent4);
+    font-size: 4rem;
+    /* font-weight: 500; */
+    color: var(--accent1);
 }
 
 .info {
@@ -39,9 +39,9 @@
 }
 
 .icon {
-    color: var(--accent4);
+    color: var(--accent1);
     font-size: 3rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
 
 .info li {
@@ -51,7 +51,7 @@
     align-items: flex-start;
     margin: 20px 0;
     cursor: pointer;
-    color: var(--accent4);
+    color: var(--accent1);
 }
 
 .sci {
@@ -65,7 +65,7 @@
 }
 
 .contactForm {
-    position: absolute;
+    position: relative;
     padding: 70px 50px;
     padding-left: 250px;
     margin-left: 150px;
@@ -73,7 +73,10 @@
     height: 100%;
     background: var(--accent1);
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.15);
+    
 }
+
+
 
 .contactForm h2 {
     font-size: 2.4rem;
@@ -224,5 +227,7 @@
 
     .btnContainer {
         margin-bottom: 3rem;
+        padding: 0 2rem;
+        width: 100%;
     }
 }
