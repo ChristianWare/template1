@@ -59,7 +59,7 @@ function Navbar() {
             <Button
               href='/'
               text='Mobile'
-              color='primaryOutline'
+              color='primaryOutline2'
               btnSz='large'
             />
           </div>

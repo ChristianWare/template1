@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: auto;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     color: var(--accent4);
     border-radius: 0px 0px 25px 0px;
     text-transform: uppercase;
@@ -22,7 +22,6 @@
 
 .btnText {
     position: relative;
-    font-weight: 2rem;
     font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
@@ -43,7 +42,7 @@
 }
 
 .primaryOutline {
-    background-color: transparent;
+    background-color: var(--accent4);
     border: 2px solid var(--accent1);
     color: var(--accent1);
 }
@@ -51,6 +50,17 @@
 .primaryOutline:hover {
     background-color: var(--accent1);
     color: var(--accent4);
+}
+
+.primaryOutline2 {
+    background-color: var(--accent5);
+    border: 2px solid var(--accent5);
+    color: var(--accent4);
+}
+
+.primaryOutline2:hover {
+    background-color: var(--accent4);
+    color: var(--accent5);
 }
 
 .secondary {
