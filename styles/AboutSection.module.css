@@ -47,7 +47,32 @@
 
 .contentRight {
     flex: 1;
+    position: relative;
+    z-index: 1;
     
+}
+
+.contentRight::after {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
+    background-size: 1rem 1rem;
+}
+.contentRight::before {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    bottom: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
+    background-size: 1rem 1rem;
 }
 
 .contentRightA {
@@ -60,6 +85,9 @@
 .contentRightA h2 {
     text-align: right;
     text-transform: uppercase;
+    background-color: var(--accent4);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .contnetRightDesciption {
@@ -67,11 +95,16 @@
     margin-bottom: 3rem;
     text-align: justify;
     width: 90%;
+    background-color: var(--accent4);
+    padding: 1rem;
 }
 
 .btnContainer {
     display: flex;
     margin-bottom: 3rem;
+    background-color: var(--accent4);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .link {
@@ -112,9 +145,18 @@
     }
 }
 
+@media screen and (max-width: 510px) {
+    .contentLeftA {
+        margin-top: 9rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .AboutSectionContainer {
-        padding: 4rem;
+        padding: 2rem;
     }
-    
+
+    .contentRight::after {
+        width: 30%;
+    }
 }
