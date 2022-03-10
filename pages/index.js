@@ -10,6 +10,7 @@ import AboutSection from "../components/AboutSection";
 import Photos from "../components/Photos";
 import TestimonialSection from "../components/TestimonialSection";
 import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           <Photos />
           <TestimonialSection />
           <ContactSection />
+          <Footer />
         </motion.main>
       </div>
     </div>

@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     width: auto;
-    /* border-radius: 8px; */
     color: var(--accent4);
     border-radius: 0px 0px 25px 0px;
     text-transform: uppercase;
@@ -32,24 +31,6 @@
     z-index: 5;
 }
 
-/* .largeText {
-    position: relative;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 5;
-}
-
-.smallText {
-    position: relative;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 5;
-} */
-
 .primary {
     background-color: var(--accent1);
     transition: all 0.2s ease-in-out;
@@ -58,7 +39,7 @@
 }
 
 .primary:hover {
-    background-color: transparent;
+    background-color: var(--accent4) ;
     color: var(--accent1);
 }
 

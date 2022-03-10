@@ -1,0 +1,133 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerTop {
+    padding: 10rem;
+    position: relative;
+    z-index: 1;
+}
+
+.footerTopContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 10rem 12rem;
+    background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
+    background-size: 1rem 1rem;
+    background-color: var(--accent4);
+    color: var(--accent1);
+}
+
+.footerTopContent2 {
+   position: absolute;
+   z-index:-1;
+   bottom: 50px;
+   left: 50px;
+   width: 30%;
+   height: 200px;
+   background-color: var(--accent2);
+   margin-top: 5rem;
+   background: repeating-linear-gradient(-45deg,
+       var(--accent1),
+       var(--accent1) 10px,
+       var(--accent4) 10px,
+       var(--accent4) 10px,
+       var(--accent4) 20px);
+}
+
+.footerTopContent3 {
+   position: absolute;
+   z-index:-1;
+   top: 0px;
+   right: 50px;
+   width: 30%;
+   height: 200px;
+   background-color: var(--accent2);
+   margin-top: 5rem;
+   background: repeating-linear-gradient(-45deg,
+       var(--accent1),
+       var(--accent1) 10px,
+       var(--accent4) 10px,
+       var(--accent4) 10px,
+       var(--accent4) 20px);
+}
+
+.footerTopContent h5 {
+    background-color: var(--accent4);
+    padding: 1rem;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+@media screen and (max-width: 1060px) {
+    .btnContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .footerTopContent {
+        flex-direction: column;
+    }
+
+    .footerTopContent h5 {
+        text-align: center;
+    }
+
+    .btnContainer {
+        align-items: center;
+        gap: 3rem
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footerTopContent {
+        padding: 3rem;
+    }
+
+    .footerTopContent h5 {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footerTop {
+        padding: 8rem;
+    }
+    .footerTopContent {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .footerTop {
+        padding: 3rem;
+    }
+
+    .footerTopContent {
+        padding: 4rem;
+    }
+
+    .footerTopContent2 {
+        bottom: 120px;
+        left: 0px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .footerTopContent3 {
+        display: none;
+    }
+}
