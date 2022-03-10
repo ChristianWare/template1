@@ -88,7 +88,6 @@
 
     .navItem {
       margin-bottom: 3rem;
-      /* padding: 1rem 3rem; */
       background-color: var(--accent4);
       font-size: 2rem;
       border: 2px solid var(--accent5);
@@ -98,7 +97,8 @@
       font-weight: bold;
       text-align: center;
       white-space: nowrap;
-      color: var(--accent5)
+      color: var(--accent5);
+      cursor: pointer;
     }
 
   .navItem a:hover::before {
