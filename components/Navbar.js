@@ -58,7 +58,7 @@ function Navbar() {
           <div className={styles.btnContainerMobile}>
             <Button
               href='/'
-              text='Mobile'
+              text='602-775-8941'
               color='primaryOutline2'
               btnSz='large'
             />
@@ -67,7 +67,7 @@ function Navbar() {
         <div className={styles.btnContainerDesktop}>
           <Button
             href='/'
-            text='Desktop'
+            text='602-775-8941'
             color='primaryOutline'
             btnSz='small'
           />
