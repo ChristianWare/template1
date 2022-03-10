@@ -14,13 +14,25 @@
 
 .large {
     padding: 15px 45px;
+     position: relative;
+     font-size: 1.6rem;
+     font-weight: bold;
+     text-align: center;
+     white-space: nowrap;
+     z-index: 5;
 }
 
 .small {
     padding: 8px 38px;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 5;
 }
 
-.btnText {
+/* .largeText {
     position: relative;
     font-size: 1.6rem;
     font-weight: bold;
@@ -28,6 +40,15 @@
     white-space: nowrap;
     z-index: 5;
 }
+
+.smallText {
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 5;
+} */
 
 .primary {
     background-color: var(--accent1);
