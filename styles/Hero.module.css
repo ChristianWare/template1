@@ -82,11 +82,28 @@
         var(--accent4) 20px);    
 }
 
+.imageContainer2::before {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
+    background-size: 1rem 1rem;
+}
+
 @media screen and (max-width: 953px) {
     .content {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .imageContainer2::before {
+        top: -30px;
+        right: -40px;
     }
 
     .contentRight, .contentLeft {

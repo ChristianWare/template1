@@ -13,7 +13,7 @@ function AboutSection() {
           <Image
             src={b6}
             alt=''
-            width={575}
+            width={475}
             height={575}
             objectFit='cover'
             className={styles.img}

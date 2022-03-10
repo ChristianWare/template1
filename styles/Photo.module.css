@@ -1,13 +1,48 @@
 .photosContainer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
     margin-bottom: 15rem;
 
 }
 
-.heading {
-    color: var(--accent1);
-    margin-bottom: 2rem;
-    margin-left: 5rem;
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     text-transform: uppercase;
+    margin-bottom: 5.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.topContainer::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    left: 0;
+    width: 50%;
+    height: 200px;
+    background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
+    background-size: 1rem 1rem;
+}
+
+.heading {
+    color: var(--accent1); 
+    background-color: var(--accent4);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.topContainer p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    color: var(--accent1);
+    background-color: var(--accent4);
 }
 
 .boxContainer {
@@ -17,7 +52,8 @@
         "one two three"
         "one four five";
     grid-template-columns: 50% 30% 20%;
-    padding: 0rem 5rem 1rem 5rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
 }
 
 .box1 {
@@ -82,8 +118,7 @@
     "oneB twoB threeB"
     "fourB fiveB threeB";
     grid-template-columns: 25% 30% 45%;
-    /* margin-top: 1rem; */
-    padding: 0rem 5rem ;
+    overflow: hidden;
 }
 
 .box1B {
@@ -107,6 +142,12 @@
     height: 270px;
 }
 
+@media screen and (max-width: 1000px) {
+    .topContainer::before {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 868px) {
     .boxContainer {
         grid-template-areas:
@@ -128,3 +169,16 @@
         padding: 0 0 1rem 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .topContainer {
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topContainer {
+        margin-bottom: 9rem;
+    }
+}
+

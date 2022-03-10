@@ -4,16 +4,15 @@
     color: var(--accent1);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 5rem;
 }
 
 .contentLeft {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
-    gap: 6rem;
     flex: 1
 }
 
@@ -63,12 +62,13 @@
     background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
     background-size: 1rem 1rem;
 }
+
 .contentRight::before {
     content:'';
     position: absolute;
     z-index: -1;
     bottom: -50px;
-    left: -50px;
+    left: -20px;
     width: 200px;
     height: 200px;
     background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
@@ -127,6 +127,17 @@
         flex-direction: column-reverse;
         align-items: flex-end;
         gap: 1rem;
+        padding: 3rem;
+    }
+
+    .contentRight::before {
+        bottom: -20px;
+        left: -50px;
+    }
+    
+
+    .contentLeftA {
+        margin-top: 9rem;
     }
 
     .contentRightA {
@@ -145,18 +156,12 @@
     }
 }
 
-@media screen and (max-width: 510px) {
-    .contentLeftA {
-        margin-top: 9rem;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .AboutSectionContainer {
         padding: 2rem;
     }
 
     .contentRight::after {
-        width: 30%;
+        /* width: 30%; */
     }
 }
