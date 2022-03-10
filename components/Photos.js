@@ -8,7 +8,6 @@ import b4 from "../public/images/b4.jpg";
 import b5 from "../public/images/b5.jpg";
 import b6 from "../public/images/b6.jpg";
 import b7 from "../public/images/b7.jpg";
-// import Photos2 from "./Photos2";
 
 function Photos() {
   return (

@@ -23,78 +23,127 @@
     font-size: 2rem;
     font-weight: 400;
     cursor: pointer;
-    text-transform: uppercase;
-    
+    text-transform: uppercase; 
 }
 
 .icon {
     font-size: 4rem;
 }
 
-.bottomContentA {
+.bottomContent {
     display: grid;
-    grid-gap: 1rem;
     grid-template-areas: 
-        "one two";
-    grid-template-columns: 20% 50%;
-    justify-content: center;
+    "one one two three"
+    "four five five three"
+    ;
+    grid-gap: 1rem;
 }
 
-.img1, .img2 {
-    position: relative;
-    height: 175px;
+.card {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid var(--accent5); 
+   /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+   padding: 3rem 4rem;
 }
 
-.img1 {
-    grid-area: one;
-}
-
-.testBox1 {
-    grid-area: two;
-    border: 1px solid var(--accent1);
+.cardHead {
+    display: flex;
+    align-items: center;
     color: var(--accent1);
-    padding: 2rem;
-}
-
- .bottomContentB {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-areas: 
-    "three four";
-    grid-template-columns: 50% 20%;
-    justify-content: center;
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.testBox2 {
-    grid-area: three;
-    padding: 2rem;
-    border: 1px solid var(--accent1);
-    color: var(--accent1);
+.cardHead1{
+    color: var(--accent4);
+     display: flex;
+     align-items: center;
+     margin-bottom: 1rem;
 }
 
-.img2 {
+
+.imgContainer {
+    border: 2px solid var(--accent5);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+}
+
+.img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.title {
+    opacity: 0.5;
+}
+
+.cardHeading {
+    color: var(--accent4);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.cardDetail {
+    color: var(--accent1);
+    opacity: 0.7;
+}
+
+.cardDetail1 {
+    color: var(--accent4);
+    opacity: 0.7;
+}
+
+.card1{
+    background-color: var(--accent5);
+    background-image: url("/images/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+    grid-area: one;
+}
+
+.card2 {
+    grid-area: two;
+}
+
+.card3 {
+    grid-area: three;
+}
+
+.card4 {
     grid-area: four;
 }
 
-.testBox3 {
-    padding: 2rem;
-    border: 1px solid var(--accent1);
-    color: var(--accent1);
+.card5 {
+    grid-area: five;
 }
 
-@media screen and (max-width: 868px) {
-    .bottomContentA, .bottomContentB {
-        grid-template-columns: 50% 50%;
-        justify-content: end;
+@media screen and (max-width: 950px) {
+    .bottomContent {
+        grid-template-areas:
+            "one two"
+            "three four"
+            "three four"
+            "five five"
+        ;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .img1,
-    .img2 {
-        position: relative;
-        height: 135px;
+@media screen and (max-width: 768px) {
+    .bottomContent {
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"       
+        ;
     }
 }
