@@ -10,7 +10,7 @@ function TestimonialSection() {
   return (
     <section className={styles.testContainer}>
       <div className={styles.topContent}>
-        <h2>Testimonials</h2>
+        <h2 lang="en">Testimonials</h2>
         <Link href='/'>
           <span className={styles.link}>
             <a>See All Testimonials</a>
