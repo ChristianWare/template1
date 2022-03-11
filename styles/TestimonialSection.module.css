@@ -1,6 +1,5 @@
 .testContainer {
     margin-bottom: 15rem;
-    
 }
 
 .topContent {
@@ -22,10 +21,9 @@
     right: 0;
     width: 50%;
     height: 200px;
-    background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
+    background-image: var(--design2);
     background-size: 1rem 1rem;
 }
-
 
 .topContent h2 {
     text-transform: uppercase;
@@ -41,7 +39,6 @@
     align-items: center;
     gap: 1rem;
     font-weight: 400;
-    /* cursor: pointer; */
     text-transform: uppercase; 
     background-color: var(--accent4);
     padding: 0 1rem;

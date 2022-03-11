@@ -26,7 +26,7 @@
     left: 0;
     width: 50%;
     height: 200px;
-    background-image: radial-gradient(var(--accent5) 1px, transparent 2px);
+    background-image: var(--design2);
     background-size: 1rem 1rem;
 }
 

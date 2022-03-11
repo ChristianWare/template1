@@ -2,12 +2,18 @@
 
 :root {
   --accent1: #343F56;
-  --text: #4f6e8f;
   --accent2: #F54748;
   --accent3: #FB9300;
   --accent4: #f4ecde;
   --accent5: #7541c8;
   --accent6: #0D6DFD;
+  --design1: repeating-linear-gradient(-45deg,
+    var(--accent1),
+    var(--accent1) 10px,
+    var(--accent4) 10px,
+    var(--accent4) 10px,
+    var(--accent4) 20px);
+    --design2: radial-gradient(var(--accent5) 1px, transparent 2px);
 }
 
 * {
