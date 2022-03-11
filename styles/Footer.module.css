@@ -26,6 +26,7 @@
     background-color: var(--accent4);
     padding: 1rem;
     width: 70%;
+    /* hyphens: auto; */
 }
 
 .btnContainer {

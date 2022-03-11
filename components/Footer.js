@@ -11,10 +11,9 @@ function Footer() {
     <section className={styles.footerContainer}>
       <div className={styles.footerTop}>
         <div className={styles.footerTopContent}>
-          <h5>Satisfaction Guaranteed. Reach out to us today!</h5>
+          <h5 lang='en'>Satisfaction Guaranteed. Reach out to us today!</h5>
           <div className={styles.btnContainer}>
             <Button text='Get Quote' href='/' color='primary' btnSz='large' />
-
           </div>
         </div>
         <article className={styles.footerTopContent2}></article>

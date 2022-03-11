@@ -16,81 +16,85 @@ function Navbar() {
     } else {
       body.style.overflow = "auto";
     }
+    const handleResize = () => setIsOpen(false);
+    window.addEventListener('resize', handleResize);
   }, [isOpen]);
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.navbar}>
-        <Link href='/'>
-          <span className={styles.navbarLogo}>
-            <RiVipCrownFill className={styles.navbarIcon} />
-            <a>Company Name</a>
-          </span>
-        </Link>
-        <ul
-          onClick={openMenu}
-          className={
-            isOpen === false
-              ? styles.navmenu
-              : styles.navmenu + " " + styles.active
-          }
-        >
-          <li className={styles.navItem}>
-            <Link href='/'>
-              <a onClick={openMenu}>Home</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href='/services'>
-              <a onClick={openMenu}>Services</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href='/about'>
-              <a onClick={openMenu}>About</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href='/#photos'>
-              <a onClick={openMenu}>Photos</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href='/#contact'>
-              <a onClick={openMenu}>Contact</a>
-            </Link>
-          </li>
-          <div className={styles.btnContainerMobile}>
+    <>
+      <header className={styles.header}>
+        <nav className={styles.navbar}>
+          <Link href='/'>
+            <span className={styles.navbarLogo}>
+              <RiVipCrownFill className={styles.navbarIcon} />
+              <a>Company Name</a>
+            </span>
+          </Link>
+          <ul
+            onClick={openMenu}
+            className={
+              isOpen === false
+                ? styles.navmenu
+                : styles.navmenu + " " + styles.active
+            }
+          >
+            <li className={styles.navItem}>
+              <Link href='/'>
+                <a onClick={openMenu}>Home</a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href='/services'>
+                <a onClick={openMenu}>Services</a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href='/about'>
+                <a onClick={openMenu}>About</a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href='/#photos'>
+                <a onClick={openMenu}>Photos</a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href='/#contact'>
+                <a onClick={openMenu}>Contact</a>
+              </Link>
+            </li>
+            <div className={styles.btnContainerMobile}>
+              <Button
+                href='/'
+                text='602-775-8941'
+                color='primaryOutline2'
+                btnSz='large'
+              />
+            </div>
+          </ul>
+          <div className={styles.btnContainerDesktop}>
             <Button
-              href='/'
+              href='tel:602-775-8941'
               text='602-775-8941'
               color='primaryOutline2'
-              btnSz='large'
+              btnSz='small'
             />
           </div>
-        </ul>
-        <div className={styles.btnContainerDesktop}>
-          <Button
-            href='tel:602-775-8941'
-            text='602-775-8941'
-            color='primaryOutline2'
-            btnSz='small'
-          />
-        </div>
-        <span
-          className={
-            isOpen === false
-              ? styles.hamburger
-              : styles.hamburger + " " + styles.active
-          }
-          onClick={openMenu}
-        >
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-        </span>
-      </nav>
-    </header>
+          <span
+            className={
+              isOpen === false
+                ? styles.hamburger
+                : styles.hamburger + " " + styles.active
+            }
+            onClick={openMenu}
+          >
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+          </span>
+        </nav>
+      </header>
+    </>
   );
 }
 
