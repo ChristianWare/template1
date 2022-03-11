@@ -11,7 +11,7 @@ import b7 from "../public/images/b7.jpg";
 
 function Photos() {
   return (
-    <section className={styles.photosContainer}>
+    <section className={styles.photosContainer} id="photos">
       <div className={styles.topContainer}>
         <h2 className={styles.heading}>Our Work</h2>
         <p>What We're Capable of</p>

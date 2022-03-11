@@ -1,8 +1,6 @@
 .header {
   border-bottom: 1px solid var(--accent1);  
-  z-index: 999;
-  /* background-color: transparent; */
-  
+  z-index: 999;  
 }
 
 .navbar {
@@ -56,7 +54,7 @@
 }
 
 .navItem {
-  margin-left: 5rem;
+  margin-left: 4rem;
   color: var(--accent1);
   font-weight: bold;
 }
@@ -67,6 +65,12 @@
 
 .btnContainerMobile {
   display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navItem {
+    margin-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 953px) {

@@ -8,15 +8,12 @@ import b14 from "../public/images/b14.jpg";
 
 function TestimonialSection() {
   return (
-    <section className={styles.testContainer}>
+    <section className={styles.testContainer} id='testimonials'>
       <div className={styles.topContent}>
-        <h2 lang="en">Testimonials</h2>
-        <Link href='/'>
-          <span className={styles.link}>
-            <a>See All Testimonials</a>
-            <CgArrowLongRight className={styles.icon} />
-          </span>
-        </Link>
+        <h2 lang='en'>Testimonials</h2>
+        <span className={styles.link}>
+          <a>What People Say About Us</a>
+        </span>
       </div>
       <div className={styles.bottomContent}>
         <article className={`${styles.card} ${styles.card1}`}>
@@ -88,8 +85,8 @@ function TestimonialSection() {
             enjoy, and make a good living while doing something I love. Before
             joining the bootcamp, I’ve never written a line of code. I needed
             some structure from professionals who can help me learn programming
-            step by step. The agile team
-            project, in particular, was outstanding.” 
+            step by step. The agile team project, in particular, was
+            outstanding.”
           </p>
         </article>
         <article className={`${styles.card} ${styles.card4}`}>

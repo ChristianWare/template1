@@ -37,22 +37,27 @@ function Navbar() {
         >
           <li className={styles.navItem}>
             <Link href='/'>
-              <a onClick={openMenu}>Item 1</a>
+              <a onClick={openMenu}>Home</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href='/'>
-              <a onClick={openMenu}>Item 2</a>
+            <Link href='/services'>
+              <a onClick={openMenu}>Services</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href='/'>
-              <a onClick={openMenu}>Item 3</a>
+            <Link href='/about'>
+              <a onClick={openMenu}>About</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href='/'>
-              <a onClick={openMenu}>Item 4</a>
+            <Link href='/#photos'>
+              <a onClick={openMenu}>Photos</a>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href='/#contact'>
+              <a onClick={openMenu}>Contact</a>
             </Link>
           </li>
           <div className={styles.btnContainerMobile}>
@@ -68,7 +73,7 @@ function Navbar() {
           <Button
             href='/'
             text='602-775-8941'
-            color='primaryOutline'
+            color='primaryOutline2'
             btnSz='small'
           />
         </div>

@@ -6,12 +6,10 @@ import { BsTelephoneForward } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
 import { FiYoutube } from "react-icons/fi";
-import { FaLinkedinIn } from "react-icons/fa";
-import { ImPinterest2 } from "react-icons/im";
 
 function ContactSection() {
   return (
-    <section className={styles.contactContainer}>
+    <section className={styles.contactContainer} id='contact'>
       <div className={styles.container}>
         <div className={styles.contactInfo}>
           <div className={styles.unnammed}>

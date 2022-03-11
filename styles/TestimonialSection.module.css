@@ -9,7 +9,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     color: var(--accent1);
-    margin-bottom: 5rem;
+    margin-bottom: 6.4rem;
     position: relative;
     z-index: 1;
 }
@@ -41,14 +41,10 @@
     align-items: center;
     gap: 1rem;
     font-weight: 400;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-transform: uppercase; 
     background-color: var(--accent4);
     padding: 0 1rem;
-}
-
-.icon {
-    font-size: 4rem;
 }
 
 .bottomContent {
@@ -174,12 +170,18 @@
     }
 
     .topContent {
-        margin-bottom: 7.5rem;
+        margin-bottom: 8.7rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .topContent {
-        margin-bottom: 9rem;
+        margin-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .topContent {
+        margin-bottom: 3.5rem;
     }
 }
