@@ -57,6 +57,7 @@
   margin-left: 4rem;
   color: var(--accent1);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .btnContainerDesktop {

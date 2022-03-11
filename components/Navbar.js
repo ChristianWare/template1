@@ -17,7 +17,7 @@ function Navbar() {
       body.style.overflow = "auto";
     }
     const handleResize = () => setIsOpen(false);
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, [isOpen]);
 
   return (
@@ -38,31 +38,31 @@ function Navbar() {
                 : styles.navmenu + " " + styles.active
             }
           >
-            <li className={styles.navItem}>
-              <Link href='/'>
+            <Link href='/'>
+              <li className={styles.navItem}>
                 <a onClick={openMenu}>Home</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href='/services'>
+              </li>
+            </Link>
+            <Link href='/services'>
+              <li className={styles.navItem}>
                 <a onClick={openMenu}>Services</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href='/about'>
+              </li>
+            </Link>
+            <Link href='/about'>
+              <li className={styles.navItem}>
                 <a onClick={openMenu}>About</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href='/#photos'>
+              </li>
+            </Link>
+            <Link href='/#photos'>
+              <li className={styles.navItem}>
                 <a onClick={openMenu}>Photos</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
+              </li>
+            </Link>
               <Link href='/#contact'>
+            <li className={styles.navItem}>
                 <a onClick={openMenu}>Contact</a>
-              </Link>
             </li>
+              </Link>
             <div className={styles.btnContainerMobile}>
               <Button
                 href='/'
