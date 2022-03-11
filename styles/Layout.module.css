@@ -1,0 +1,15 @@
+.background {
+    background-color: var(--accent4);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.layout {
+    z-index: 1;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
