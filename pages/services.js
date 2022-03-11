@@ -5,7 +5,7 @@ function services() {
     <div className={styles.servicesContainer}>
       <div className={styles.topContent}>
         <h1 className={styles.heading}>Premium Quality Services & Price List.</h1>
-        <h5>
+        <h5 lang='en'>
           We offer affordable services, and the quality/cost ratio is the best
           in the business. At our shop, you will get your money's worth of
           service. We welcome you to walk in or schedule an appointment today.

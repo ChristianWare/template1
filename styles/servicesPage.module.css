@@ -18,6 +18,8 @@
 
 .topContent h5 {
     width: 80%;
+    text-align: justify;
+    hyphens: auto;
     color: var(--accent1);
     font-weight: 400;
     font-size: 2rem;
@@ -63,8 +65,13 @@
         padding-top: 2rem;
     }
     
-    .heading, .topContent h5 {
+    .heading {
         text-align: center;
+        width: 100%;
+    }
+
+    .topContent h5 {
+        text-align: justify;
         width: 100%;
     }
 }

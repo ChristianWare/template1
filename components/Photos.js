@@ -11,7 +11,7 @@ import b7 from "../public/images/b7.jpg";
 
 function Photos() {
   return (
-    <section className={styles.photosContainer} id="photos">
+    <section className={styles.photosContainer} id='photos'>
       <div className={styles.topContainer}>
         <h2 className={styles.heading}>Our Work</h2>
         <p>What We're Capable of</p>
@@ -26,7 +26,7 @@ function Photos() {
         <div className={styles.box3}>
           <h5>Beards</h5>
 
-          <Link href='/'>
+          <Link href='/services'>
             <a>
               <CgArrowLongRight className={styles.icon} />
             </a>
@@ -35,7 +35,7 @@ function Photos() {
         <div className={styles.box4}>
           <h5>Hair Cuts</h5>
 
-          <Link href='/'>
+          <Link href='/services'>
             <a>
               <CgArrowLongRight className={styles.icon} />
             </a>
@@ -52,7 +52,7 @@ function Photos() {
         <div className={styles.box2B}>
           <h5>Beards</h5>
 
-          <Link href='/'>
+          <Link href='/services'>
             <a>
               <CgArrowLongRight className={styles.icon} />
             </a>
@@ -64,7 +64,7 @@ function Photos() {
         <div className={styles.box4B}>
           <h5>Hair Cuts</h5>
 
-          <Link href='/'>
+          <Link href='/services'>
             <a>
               <CgArrowLongRight className={styles.icon} />
             </a>
