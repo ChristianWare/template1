@@ -94,6 +94,7 @@
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-align: justify;
+    hyphens: auto;
     width: 90%;
     background-color: var(--accent4);
     padding: 1rem;
@@ -158,9 +159,5 @@
 @media screen and (max-width: 480px) {
     .AboutSectionContainer {
         padding: 2rem;
-    }
-
-    .contentRight::after {
-        /* width: 30%; */
     }
 }

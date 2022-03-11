@@ -13,13 +13,8 @@ function Footer() {
         <div className={styles.footerTopContent}>
           <h5>Satisfaction Guaranteed. Reach out to us today!</h5>
           <div className={styles.btnContainer}>
-            <Button text='Get Quote' href='/' color='primary' btnSz='small' />
-            <Button
-              text='See All Plans'
-              href='/'
-              color='primaryOutline'
-              btnSz='small'
-            />
+            <Button text='Get Quote' href='/' color='primary' btnSz='large' />
+
           </div>
         </div>
         <article className={styles.footerTopContent2}></article>

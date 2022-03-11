@@ -12,14 +12,11 @@
     padding: 5rem;
 }
 
-
 .contentLeft {
     flex: 2;
     display: flex;
     flex-direction: column;
-    /* gap: 2.5rem; */
 }
-
 
 .heading {
     width: 90%;

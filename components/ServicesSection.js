@@ -11,7 +11,7 @@ function ServicesSection() {
     <section className={styles.servicesContainer}>
       <div className={styles.topContent}>
         <h2>Our Services</h2>
-        <Link href='/'>
+        <Link href='/services'>
           <span className={styles.link}>
             <a>See All Services</a>
             <CgArrowLongRight className={styles.icon} />
