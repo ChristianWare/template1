@@ -71,7 +71,7 @@ function Navbar() {
         </ul>
         <div className={styles.btnContainerDesktop}>
           <Button
-            href='/'
+            href='tel:602-775-8941'
             text='602-775-8941'
             color='primaryOutline2'
             btnSz='small'

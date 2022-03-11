@@ -27,11 +27,35 @@
 
 .description {
     width: 80%;
+    text-align: justify;
+    hyphens: auto;
     color: var(--accent1);
     font-weight: 400;
     font-size: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* gap: 1rem; */
+    margin-bottom: 3rem;
+}
+
+.hours {
+    color: var(--accent1);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.address {
+    color: var(--accent6);
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+    cursor: pointer;
 }
 
 .content1B {
@@ -119,8 +143,8 @@
     }
 
     .description {
-        text-align: center;
-        width: 80%;
+        /* text-align: center; */
+        width: 100%;
     }
     
     .btnContainer {
