@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/ServicesSection.module.css";
-import b1 from "../public/images/b1.jpg";
-import b2 from "../public/images/b2.jpg";
-import b3 from "../public/images/b3.jpg";
+import haircut from "../public/images/haircut.svg";
+import beard from "../public/images/beard.svg";
+import child from "../public/images/child.svg";
 import { CgArrowLongRight } from "react-icons/cg";
 
 function ServicesSection() {
@@ -20,33 +20,33 @@ function ServicesSection() {
       </div>
       <div className={styles.bottomContent}>
         <div className={styles.cardOne}>
-          <h4 className={styles.cardheading}>Service One Title</h4>
+          <h4 className={styles.cardheading}>Hair Cuts</h4>
           <p className={styles.cardDescription} lang='en'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequuntur voluptate nam quas? Veritatis, dolorem, incidunt.
+            We can cut your hair in any style you want. There isnt a style we
+            havent seen. From fades to flat tops, Ive got you covered.
           </p>
           <div className={styles.placeHolderImage}>
-            <div className={styles.circle}></div>
+            <Image src={haircut} alt='icon' />
           </div>
         </div>
         <div className={styles.cardTwo}>
-          <h4 className={styles.cardheading}>Service Two Title</h4>
+          <h4 className={styles.cardheading}>Beards</h4>
           <p className={styles.cardDescription} lang='en'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequuntur voluptate nam quas? Veritatis, dolorem, incidunt.
+            Beard grooming has never been so easy. Let a professional do it, and
+            We will keep your facial hair looking resplendent.
           </p>
           <div className={styles.placeHolderImage}>
-            <div className={styles.circle2}></div>
+            <Image src={beard} alt='icon' />
           </div>
         </div>
         <div className={styles.cardThree}>
-          <h4 className={styles.cardheading}>Service Three Title</h4>
+          <h4 className={styles.cardheading}>Children</h4>
           <p className={styles.cardDescription} lang='en'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequuntur voluptate nam quas? Veritatis, dolorem, incidunt.
+            Kids welcome! We will work with you and your children to give them
+            the best cut possible.
           </p>
           <div className={styles.placeHolderImage}>
-            <div className={styles.circle3}></div>
+            <Image src={child} alt='icon' />
           </div>
         </div>
       </div>

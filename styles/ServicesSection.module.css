@@ -67,14 +67,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: fit-content;
-    
-
+    justify-content: center;
+    height: 100%;
 }
 
 .cardOne {
     background-color: var(--accent2);
     color: var(--accent4);
+    height: 100%;
 }
 
 .cardTwo {
@@ -95,37 +95,17 @@
 }
 
 .cardDescription {
-    text-align: justify;
-    /* hyphens: auto; */
-    word-break: break-all;
-    width: 90%;
+    text-align: left;
+    hyphens: auto;
+    /* word-break: break-all; */
+    width: 80%;
     
 }
 
 .placeHolderImage {
     position: relative;
     margin-top: 3rem;
-}
-
-.circle {
-    width:175px;
-    height: 175px;
-    border-radius: 50%;
-    border: 15px solid var(--accent4);
-}
-
-.circle2 {
-    width:175px;
-    height: 175px;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border: 15px solid var(--accent1);
-}
-
-.circle3 {
-    width:175px;
-    height: 175px;
-    border: 15px solid var(--accent4)
+    width: 40%;
 }
 
 @media screen and (max-width: 1000px) {
