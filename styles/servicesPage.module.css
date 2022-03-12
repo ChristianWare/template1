@@ -10,7 +10,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 9rem;
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
 }
 
 .topLeft, .topRight {
@@ -137,6 +137,13 @@
     }
 }
 
+@media screen and (max-width: 690px) {
+    .topImgContainer::after {
+        bottom: -50px;
+        left: -50px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .topContent {
         padding: 1rem;
@@ -159,7 +166,7 @@
 }
 
 @media screen and (max-width: 370px) {
-    .contentBottom1 {
+    .contentBottom3 {
         margin-bottom: 12rem;
     }
 }
