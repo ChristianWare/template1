@@ -1,80 +1,87 @@
 import styles from "../styles/servicesPage.module.css";
+import {
+  adultLeft,
+  adultRight,
+  beardsLeft,
+  beardsRight,
+  childrenLeft,
+  childrenRight,
+} from "../src/data";
 
 function services() {
   return (
     <div className={styles.servicesContainer}>
       <div className={styles.topContent}>
-        <h1 className={styles.heading}>Premium Quality Services & Price List.</h1>
-        <h5 lang='en'>
+        <h1 className={styles.heading}>
+          Premium Quality Services & Price List.
+        </h1>
+        <p lang='en'>
           We offer affordable services, and the quality/cost ratio is the best
           in the business. At our shop, you will get your money's worth of
           service. We welcome you to walk in or schedule an appointment today.
-        </h5>
+        </p>
       </div>
-      <div className={styles.contentBottom}>
+      <h2 className={styles.sectionHeader}>Hair Cuts</h2>
+      <div className={styles.contentBottom1}>
         <div className={styles.contentLeft}>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Regular Haircut</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$25</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Fade</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$27</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Kids Haircut</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$20</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Kids Fade</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$24</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Senior Haircut</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$20</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Shape Up</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$15</h6>
-          </div>
+          {adultLeft.map((menu) => (
+            <div key={menu.id} class={styles.row}>
+              <h6 className={styles.left}>{menu.item}</h6>
+              <span className={styles.separator}></span>
+              <h6 className={styles.right}>$25</h6>
+            </div>
+          ))}
         </div>
         <div className={styles.contentRight}>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Beard Trim</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$15</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Head Shave</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$30</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Hot Towel Shave</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$32</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Face Mask</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$29</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Senior Fade</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$20</h6>
-          </div>
-          <div class={styles.row}>
-            <h6 class={styles.left}>Woman's Haircut</h6>
-            <span class={styles.separator}></span>
-            <h6 class={styles.right}>$27</h6>
-          </div>
+          {adultRight.map((menu) => (
+            <div key={menu.id} class={styles.row}>
+              <h6 className={styles.left}>{menu.item}</h6>
+              <span className={styles.separator}></span>
+              <h6 className={styles.right}>$25</h6>
+            </div>
+          ))}
+        </div>
+      </div>
+      <h2 className={styles.sectionHeader}>Beards</h2>
+      <div className={styles.contentBottom2}>
+        <div className={styles.contentLeft}>
+          {beardsLeft.map((menu) => (
+            <div key={menu.id} class={styles.row}>
+              <h6 className={styles.left}>{menu.item}</h6>
+              <span className={styles.separator2}></span>
+              <h6 className={styles.right}>$25</h6>
+            </div>
+          ))}
+        </div>
+        <div className={styles.contentRight}>
+          {beardsRight.map((menu) => (
+            <div key={menu.id} class={styles.row}>
+              <h6 className={styles.left}>{menu.item}</h6>
+              <span className={styles.separator2}></span>
+              <h6 className={styles.right}>$25</h6>
+            </div>
+          ))}
+        </div>
+      </div>
+      <h2 className={styles.sectionHeader}>Children</h2>
+      <div className={styles.contentBottom3}>
+        <div className={styles.contentLeft}>
+          {childrenLeft.map((menu) => (
+            <div key={menu.id} class={styles.row}>
+              <h6 className={styles.left}>{menu.item}</h6>
+              <span className={styles.separator}></span>
+              <h6 className={styles.right}>$25</h6>
+            </div>
+          ))}
+        </div>
+        <div className={styles.contentRight}>
+          {childrenRight.map((menu) => (
+            <div key={menu.id} class={styles.row}>
+              <h6 className={styles.left}>{menu.item}</h6>
+              <span className={styles.separator}></span>
+              <h6 className={styles.right}>$25</h6>
+            </div>
+          ))}
         </div>
       </div>
     </div>

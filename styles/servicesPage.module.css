@@ -16,7 +16,7 @@
     margin-bottom: 3rem;
 }
 
-.topContent h5 {
+.topContent p {
     width: 80%;
     text-align: justify;
     hyphens: auto;
@@ -27,7 +27,14 @@
     margin-bottom: 3rem;
 }
 
-.contentBottom {
+.sectionHeader {
+    color: var(--accent1);
+    text-transform: uppercase;
+}
+
+.contentBottom1,
+.contentBottom2,
+.contentBottom3 {
     display: flex;
     justify-content: space-between;
     gap: 5rem;
@@ -35,7 +42,18 @@
     margin-bottom: 5rem;
     padding: 3rem;
     padding-top: 2rem;
-    border: 2px solid var(--accent3)
+    background-color: var(--accent2);
+    color: var(--accent4);
+}
+
+.contentBottom2 {
+    background-color: var(--accent3);
+    color: var(--accent1);
+}
+
+.contentBottom3 {
+    background-color: var(--accent1);
+    color: var(--accent4);
 }
 
 .contentLeft, .contentRight {
@@ -57,7 +75,12 @@
 
 .separator {
     flex-grow: 1;
-    border-bottom: dotted 2px black;
+    border-bottom: dotted 2px var(--accent4);
+}
+
+.separator2 {
+    flex-grow: 1;
+    border-bottom: dotted 2px var(--accent1);
 }
 
 @media screen and (max-width: 953px) {
@@ -83,8 +106,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .contentBottom {
+    .contentBottom1,
+    .contentBottom2, 
+    .contentBottom3 {
         flex-direction: column;
+        gap: 0rem;
     }
 }
 
@@ -95,7 +121,7 @@
 }
 
 @media screen and (max-width: 370px) {
-    .contentBottom {
+    .contentBottom1 {
         margin-bottom: 12rem;
     }
 }
