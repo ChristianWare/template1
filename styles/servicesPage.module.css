@@ -69,7 +69,7 @@
     margin-bottom: 5rem;
     padding: 3rem;
     padding-top: 2rem;
-    background-color: var(--accent2);
+    background-color: var(--accent5);
     color: var(--accent4);
 }
 
@@ -79,7 +79,7 @@
 }
 
 .contentBottom3 {
-    background-color: var(--accent1);
+    background-color: var(--accent2);
     color: var(--accent4);
 }
 

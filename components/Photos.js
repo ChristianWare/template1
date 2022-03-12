@@ -26,16 +26,16 @@ function Photos() {
         <div className={styles.box3}>
           <h5>Beards</h5>
 
-          <Link href='/services'>
+          <Link href='/services/#beards'>
             <a>
-              <CgArrowLongRight className={styles.icon} />
+              <CgArrowLongRight className={styles.iconBeard} />
             </a>
           </Link>
         </div>
         <div className={styles.box4}>
           <h5>Hair Cuts</h5>
 
-          <Link href='/services'>
+          <Link href='/services/#haircuts'>
             <a>
               <CgArrowLongRight className={styles.icon} />
             </a>
@@ -50,9 +50,9 @@ function Photos() {
           <Image src={b5} layout='fill' objectFit='cover' />
         </div>
         <div className={styles.box2B}>
-          <h5>Beards</h5>
+          <h5>Children</h5>
 
-          <Link href='/services'>
+          <Link href='/services/#children'>
             <a>
               <CgArrowLongRight className={styles.icon} />
             </a>
@@ -64,7 +64,7 @@ function Photos() {
         <div className={styles.box4B}>
           <h5>Hair Cuts</h5>
 
-          <Link href='/services'>
+          <Link href='/services/#haircuts'>
             <a>
               <CgArrowLongRight className={styles.icon} />
             </a>

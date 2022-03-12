@@ -31,7 +31,7 @@ function Hero() {
           </div>
           <div className={styles.btnContainer}>
             <Button text='contact' href='/#contact' color='primary' />
-            <Button text='services' href='/services' color='primaryOutline' />
+            <Button text='services' href='/services' color='primaryOutline2' />
           </div>
         </div>
         <div className={styles.contentRight}>

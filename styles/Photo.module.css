@@ -78,13 +78,18 @@
 
 .box3,
 .box4B {
-    background-color: var(--accent2);
+    background-color: var(--accent5);
     color: var(--accent4);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     padding: 3rem 3rem 1rem 2rem ;
+}
+
+.box3 {
+    background-color: var(--accent3);
+    color: var(--accent1);
 }
 
 .box2B {
@@ -99,8 +104,8 @@
 
 .box4
 {
-    background-color: var(--accent3);
-    color: var(--accent1);
+    background-color: var(--accent1);
+    color: var(--accent4);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -110,6 +115,12 @@
 
 .icon {
     font-size: 4rem;
+    color: var(--accent4);
+}
+
+.iconBeard {
+    font-size: 4rem;
+    color: var(--accent1);
 }
 
 .boxContainer2 {
@@ -127,20 +138,18 @@
 }
 .box2B {
     grid-area: oneB ;
+    background-color: var(--accent2);
 }
 .box3B {
     grid-area: threeB;
+    grid-area: threeB;
+    height: 270px;
 }
 .box4B {
     grid-area: fiveB;
 }
 .box5B {
     grid-area: fourB ;
-}
-
-.box3B {
-    grid-area: threeB;
-    height: 270px;
 }
 
 @media screen and (max-width: 1000px) {

@@ -72,7 +72,7 @@
 }
 
 .cardOne {
-    background-color: var(--accent2);
+    background-color: var(--accent5);
     color: var(--accent4);
     height: 100%;
 }
@@ -85,7 +85,7 @@
 
 .cardThree {
     margin-top: 10rem;
-    background-color: var(--accent1);
+    background-color: var(--accent2);
     color: var(--accent4);
 }
 

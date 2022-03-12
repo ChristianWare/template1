@@ -31,7 +31,9 @@ function services() {
           </div>
         </div>
       </div>
-      <h2 className={styles.sectionHeader}>Hair Cuts</h2>
+      <h2 className={styles.sectionHeader} id='haircuts'>
+        Hair Cuts
+      </h2>
       <div className={styles.contentBottom1}>
         <div className={styles.contentLeft}>
           {adultLeft.map((menu) => (
@@ -52,7 +54,9 @@ function services() {
           ))}
         </div>
       </div>
-      <h2 className={styles.sectionHeader}>Beards</h2>
+      <h2 className={styles.sectionHeader} id='beards'>
+        Beards
+      </h2>
       <div className={styles.contentBottom2}>
         <div className={styles.contentLeft}>
           {beardsLeft.map((menu) => (
@@ -73,8 +77,10 @@ function services() {
           ))}
         </div>
       </div>
-      <h2 className={styles.sectionHeader}>Children</h2>
-      <div className={styles.contentBottom3}>
+      <h2 className={styles.sectionHeader} id='children'>
+        Children
+      </h2>
+      <div className={styles.contentBottom3} >
         <div className={styles.contentLeft}>
           {childrenLeft.map((menu) => (
             <div key={menu.id} class={styles.row}>
