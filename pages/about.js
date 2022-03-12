@@ -3,7 +3,7 @@ import styles from "../styles/aboutPage.module.css";
 import b7 from "../public/images/b8.jpg";
 import b15 from "../public/images/b15.jpg";
 import b16 from "../public/images/b16.jpg";
-import b17 from "../public/images/b17.jpg";
+import b17 from "../public/images/b12.jpg";
 
 function about() {
   return (
