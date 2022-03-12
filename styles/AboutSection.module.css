@@ -92,6 +92,7 @@
     width: 90%;
     background-color: var(--accent4);
     padding: 1rem;
+    padding-bottom: .5rem;
 }
 
 .btnContainer {

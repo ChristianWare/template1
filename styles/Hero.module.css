@@ -1,6 +1,5 @@
 .heroContainer {
     /* background-image: linear-gradient(to top left, #e394a3 50%, #8dd6a6 50%); */
-    /* height: 100vh; */
     margin-bottom: 15rem;
 }
 
@@ -27,7 +26,6 @@
 
 .description {
     width: 80%;
-    text-align: justify;
     hyphens: auto;
     color: var(--accent1);
     font-weight: 400;
@@ -138,7 +136,7 @@
     }
 
     .description {
-        /* text-align: center; */
+        text-align: center;
         width: 100%;
     }
     

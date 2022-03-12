@@ -10,7 +10,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 9rem;
-    /* margin-bottom: 10rem; */
+    margin-bottom: 5rem;
 }
 
 .topLeft, .topRight {
@@ -45,7 +45,7 @@
 
 .topContent p {
     width: 90%;
-    text-align: justify;
+    /* text-align: justify; */
     hyphens: auto;
     color: var(--accent1);
     font-weight: 400;
@@ -120,6 +120,7 @@
 
     .topContent p {
         width: 100%;
+        text-align: center;
     }
     
     .heading {
@@ -128,7 +129,7 @@
     }
 
     .topContent h5 {
-        text-align: justify;
+        text-align: center;
         width: 100%;
     }
 

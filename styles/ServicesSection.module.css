@@ -113,6 +113,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .cardDescription {
+        text-align: center;
+    }
+
     .cardTwo, .cardThree {
         margin-top: 0rem;
     }
