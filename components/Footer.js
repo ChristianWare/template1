@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "../styles/Footer.module.css";
-import Button from "./utils/Button";
 import { RiVipCrownFill } from "react-icons/ri";
 import { GrFacebookOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
@@ -9,16 +8,7 @@ import { FiYoutube } from "react-icons/fi";
 function Footer() {
   return (
     <section className={styles.footerContainer}>
-      <div className={styles.footerTop}>
-        <div className={styles.footerTopContent}>
-          <h5 lang='en'>Satisfaction Guaranteed. Reach out to us today!</h5>
-          <div className={styles.btnContainer}>
-            <Button text='Get Quote' href='/' color='primary' btnSz='large' />
-          </div>
-        </div>
-        <article className={styles.footerTopContent2}></article>
-        <article className={styles.footerTopContent3}></article>
-      </div>
+      
       <footer className={styles.footerBottom}>
         <div className={styles.footerContent}>
           <div className={styles.footerLeft}>

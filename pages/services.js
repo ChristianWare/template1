@@ -9,6 +9,7 @@ import {
   childrenRight,
 } from "../src/data";
 import b9 from "../public/images/b9.jpg";
+import Prefooter from "../components/Prefooter";
 
 function services() {
   return (
@@ -93,6 +94,7 @@ function services() {
           ))}
         </div>
       </div>
+      <Prefooter text='Questions? Give Us A Call!' />
     </div>
   );
 }

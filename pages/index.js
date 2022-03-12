@@ -1,7 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
@@ -10,7 +7,7 @@ import AboutSection from "../components/AboutSection";
 import Photos from "../components/Photos";
 import TestimonialSection from "../components/TestimonialSection";
 import ContactSection from "../components/ContactSection";
-import Footer from "../components/Footer";
+import Prefooter from "../components/Prefooter";
 
 export default function Home() {
   return (
@@ -21,15 +18,14 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <motion.main className={styles.main} initial='hidden' animate='show'>
-        <ScrollToTop />
-        <Hero />
-        <ServicesSection />
-        <AboutSection />
-        <Photos />
-        <TestimonialSection />
-        <ContactSection />
-      </motion.main>
+      <ScrollToTop />
+      <Hero />
+      <ServicesSection />
+      <AboutSection />
+      <Photos />
+      <TestimonialSection />
+      <ContactSection />
+      <Prefooter text='Satisfaction Guaranteed! ' />
     </>
   );
 }

@@ -4,6 +4,7 @@ import b7 from "../public/images/b8.jpg";
 import b15 from "../public/images/b15.jpg";
 import b16 from "../public/images/b16.jpg";
 import b17 from "../public/images/b12.jpg";
+import Prefooter from "../components/Prefooter";
 
 function about() {
   return (
@@ -38,11 +39,7 @@ function about() {
         </div>
         <div className={styles.right}>
           <picture className={styles.contentRightA}>
-            <Image
-              src={b7}
-              alt=''
-              objectFit='cover'
-            />
+            <Image src={b7} alt='' objectFit='cover' />
           </picture>
         </div>
       </div>
@@ -83,6 +80,7 @@ function about() {
           </picture>
         </div>
       </div>
+      <Prefooter text='Call Us to Learn More!' />
     </div>
   );
 }
