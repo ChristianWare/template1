@@ -23,7 +23,7 @@ function ServicesSection() {
           <h4 className={styles.cardheading}>Hair Cuts</h4>
           <p className={styles.cardDescription} lang='en'>
             We can cut your hair in any style you want. There isnt a style we
-            havent seen. From fades to flat tops, Ive got you covered.
+            havent seen. From fades to flat tops, We've got you covered.
           </p>
           <div className={styles.placeHolderImage}>
             <Image src={haircut} alt='icon' />

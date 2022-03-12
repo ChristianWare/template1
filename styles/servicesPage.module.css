@@ -87,6 +87,10 @@
     .topContent {
         padding-top: 2rem;
     }
+
+    .topContent p {
+        width: 100%;
+    }
     
     .heading {
         text-align: center;

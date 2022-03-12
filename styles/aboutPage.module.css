@@ -27,6 +27,131 @@
     margin-bottom: 3rem;
 }
 
+.contentbottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-bottom: 15rem;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+.left {
+    position: relative;
+    z-index: 1;
+    padding: 5rem;
+}
+
+.left::after {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--design2);
+    background-size: 1rem 1rem;
+}
+
+.contentLeftA {
+    background-color: var(--accent4);
+    color: var(--accent1);
+}
+
+.subHeading {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 3rem 3rem 0rem 3rem;
+}
+
+.subHeadingDescription {
+    text-align: justify;
+    hyphens: auto;
+    color: var(--accent1);
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.contentRightA {
+    position: relative;
+    z-index: 1;
+    
+}
+
+.contentRightA::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: -30px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    background: var(--design1);
+}
+
+.contentBottom2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.subHeading2 {
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--accent1);
+}
+
+.subP {
+    text-align: justify;
+    hyphens: auto;
+    color: var(--accent1);
+    font-weight: 400;
+    font-size: 2rem;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.imageBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 5rem;
+    background-image: var(--design2);
+    background-size: 1rem 1rem;
+}
+
+.img1, .img2, .img3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.name {
+    background-color: var(--accent4);
+    color: var(--accent1);
+}
+
+.profile {
+    text-align: justify;
+    hyphens: auto;
+    color: var(--accent1);
+    width: 95%;
+    background-color: var(--accent4);
+    padding: 1rem;
+    padding-bottom: .5rem;
+}
+
+
 @media screen and (max-width: 953px) {
     .topContent {
         padding-top: 2rem;
@@ -41,7 +166,26 @@
         text-align: justify;
         width: 100%;
     }
+
+    .contentbottom {
+        flex-direction: column;
+    }
+
+    .contentLeftA h2 {
+        text-align: center;
+    }
+
+    .imageBox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        
+    }
+
+    .subP {
+        width: 100%;
+    }
 }
+
 
 @media screen and (max-width: 600px) {
     .topContent {
@@ -52,5 +196,9 @@
 @media screen and (max-width: 570px) {
     .heading {
         font-size: 4.5rem;
+    }
+
+    .imageBox {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
