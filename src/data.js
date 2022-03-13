@@ -35,32 +35,32 @@ export const adultRight = [
   {
     id: 7,
     item: "Blowout",
-    price: "$25",
+    price: "$35",
   },
   {
     id: 8,
     item: "Burst Fade",
-    price: "$25",
+    price: "$27",
   },
   {
     id: 9,
     item: "Cornrows",
-    price: "$25",
+    price: "$32",
   },
   {
     id: 10,
     item: "Buzz Cut",
-    price: "$25",
+    price: "$19",
   },
   {
     id: 11,
     item: "Comb Over",
-    price: "$25",
+    price: "$34",
   },
   {
     id: 12,
     item: "Crew Cut",
-    price: "$25",
+    price: "$23",
   },
 ];
 export const beardsLeft = [
