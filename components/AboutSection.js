@@ -27,7 +27,7 @@ function AboutSection() {
           <div className={styles.btnContainer}>
             <Link href='/about'>
               <span className={styles.link}>
-                <a>Read More About Us</a>
+                <a>Read More</a>
                 <CgArrowLongRight className={styles.icon} />
               </span>
             </Link>

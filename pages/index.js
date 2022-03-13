@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
-import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
 import ServicesSection from "../components/ServicesSection";
 import AboutSection from "../components/AboutSection";
@@ -18,7 +17,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <ScrollToTop />
+      
       <Hero />
       <ServicesSection />
       <AboutSection />

@@ -24,7 +24,7 @@ function Hero() {
             <p className={styles.hours}>Monday - Saturday 9AM - 6PM</p>
             <a href={map} target='_blank'>
               <address className={styles.address}>
-                5100 w Camelback Rd, ste 104 <br />
+                5100 w Camelback Rd<br />
                 Phoenix, AZ 85334
               </address>
             </a>

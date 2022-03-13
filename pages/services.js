@@ -40,7 +40,7 @@ function services() {
             <div key={menu.id} class={styles.row}>
               <h6 className={styles.left}>{menu.item}</h6>
               <span className={styles.separator}></span>
-              <h6 className={styles.right}>$25</h6>
+              <h6 className={styles.right}>{menu.price}</h6>
             </div>
           ))}
         </div>
@@ -49,7 +49,7 @@ function services() {
             <div key={menu.id} class={styles.row}>
               <h6 className={styles.left}>{menu.item}</h6>
               <span className={styles.separator}></span>
-              <h6 className={styles.right}>$25</h6>
+              <h6 className={styles.right}>{menu.price}</h6>
             </div>
           ))}
         </div>
@@ -63,7 +63,7 @@ function services() {
             <div key={menu.id} class={styles.row}>
               <h6 className={styles.left}>{menu.item}</h6>
               <span className={styles.separator2}></span>
-              <h6 className={styles.right}>$25</h6>
+              <h6 className={styles.right}>{menu.price}</h6>
             </div>
           ))}
         </div>
@@ -72,7 +72,7 @@ function services() {
             <div key={menu.id} class={styles.row}>
               <h6 className={styles.left}>{menu.item}</h6>
               <span className={styles.separator2}></span>
-              <h6 className={styles.right}>$25</h6>
+              <h6 className={styles.right}>{menu.price}</h6>
             </div>
           ))}
         </div>
@@ -86,7 +86,7 @@ function services() {
             <div key={menu.id} class={styles.row}>
               <h6 className={styles.left}>{menu.item}</h6>
               <span className={styles.separator}></span>
-              <h6 className={styles.right}>$25</h6>
+              <h6 className={styles.right}>{menu.price}</h6>
             </div>
           ))}
         </div>
@@ -95,7 +95,7 @@ function services() {
             <div key={menu.id} class={styles.row}>
               <h6 className={styles.left}>{menu.item}</h6>
               <span className={styles.separator}></span>
-              <h6 className={styles.right}>$25</h6>
+              <h6 className={styles.right}>{menu.price}</h6>
             </div>
           ))}
         </div>

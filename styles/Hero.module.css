@@ -39,7 +39,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    /* gap: 1rem; */
     margin-bottom: 3rem;
 }
 
@@ -51,7 +50,6 @@
 
 .address {
     color: var(--accent5);
-    font-weight: 400;
     font-size: 2rem;
     font-style: normal;
     cursor: pointer;
@@ -145,6 +143,14 @@
     }
 }
 
+@media screen and (max-width: 550px) {
+    .btnContainer {
+        /* flex-direction: column;
+        align-items: flex-start; */
+        gap: 3rem;
+    }
+}
+
 @media screen and (max-width: 570px) {
     .imageContainer2::after {
         bottom: -30px;
@@ -156,8 +162,24 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .content {
+        padding: 0rem;
+    }
+    
+    .imageContainer2 {
+        margin-top: 2rem;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .btnContainer {
         gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content {
+        padding: 0rem;
     }
 }

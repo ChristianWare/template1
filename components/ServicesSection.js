@@ -10,7 +10,7 @@ function ServicesSection() {
   return (
     <section className={styles.servicesContainer}>
       <div className={styles.topContent}>
-        <h2>Our Services</h2>
+        <h2>Services</h2>
         <Link href='/services'>
           <span className={styles.link}>
             <a>See All Services</a>

@@ -10,7 +10,7 @@ function TestimonialSection() {
   return (
     <section className={styles.testContainer} id='testimonials'>
       <div className={styles.topContent}>
-        <h2 lang='en'>Testimonials</h2>
+        <h2 lang='en'>Reviews</h2>
         <span className={styles.link}>
           <a>What People Say About Us</a>
         </span>

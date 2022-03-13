@@ -28,10 +28,10 @@ function about() {
             <p className={styles.subHeadingDescription} lang='en'>
               Our barber shop is dedicated for men to relax, freshen their
               style, and be pampered. Elegant offers a wide range of barbering
-              services in Brooklyn including detailed men’s haircuts such as
+              services including detailed men’s haircuts such as
               fades, flat tops, tapers, layered haircuts. and a variety of other
               services such as precise straight razor shaves, beard trims, hot
-              towel shaves. Be sure to check out our services page for more
+              towel shaves. Be sure to call us for more
               information. Every service we offer comes with a complimentary
               drink, because we’re much more than a barbershop.
             </p>
