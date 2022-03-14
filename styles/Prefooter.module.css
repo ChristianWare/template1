@@ -19,6 +19,7 @@
 .content h5 {
     background-color: var(--accent4);
     padding: 1rem;
+    text-transform: uppercase;
     /* width: 70%; */
 }
 
