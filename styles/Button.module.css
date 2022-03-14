@@ -32,16 +32,22 @@
  }
 
  .primary {
-     background-color: var(--accent1);
-     transition: all 0.2s ease-in-out;
-     border: solid 2px var(--accent1);
-     border-radius: 0px 0px 25px 0px;
+    background-color: var(--accent1);
+    transition: all 0.2s ease-in-out;
+    border: solid 2px var(--accent1);
+    border-radius: 0px 0px 25px 0px;
  }
 
   .primaryOutline2 {
-      background-color: var(--accent5);
-      border: 2px solid var(--accent5);
-      color: var(--accent4);
+    background-color: var(--accent5);
+    border: 2px solid var(--accent5);
+    color: var(--accent4);
+  }
+
+  .tertiary {
+    background-color: var(--accent3);
+    color: var(--accent1);
+    border: solid 2px var(--accent3);
   }
 
 
@@ -56,9 +62,14 @@
      background-color: var(--accent4);
      color: var(--accent5);
  }
+ 
+ .tertiary:hover {
+    background-color: var(--accent1);
+    color: var(--accent3);
+ }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
    .primary,
    .primaryOutline2 {
        background-position: center;
@@ -79,7 +90,7 @@
         color: var(--accent5);
    }
 
-}
+} */
 
 @media screen and (max-width: 390px) {
     .large {

@@ -1,5 +1,6 @@
 import styles from "../../styles/Button.module.css";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function Button({
   text,
@@ -8,11 +9,13 @@ function Button({
   btnSz = "large",
 }) {
   return (
-    <Link href={href}>
-      <a className={`${styles.btn} ${styles[color]} ${styles[btnSz]}`}>
-        {text}
-      </a>
-    </Link>
+    <motion.button whileTap={{ scale: 0.9 }}>
+      <Link href={href}>
+        <a className={`${styles.btn} ${styles[color]} ${styles[btnSz]}`}>
+          {text}
+        </a>
+      </Link>
+    </motion.button>
   );
 }
 
