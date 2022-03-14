@@ -5,11 +5,21 @@ import haircut from "../public/images/haircut.svg";
 import beard from "../public/images/beard.svg";
 import child from "../public/images/child.svg";
 import { CgArrowLongRight } from "react-icons/cg";
+import { reveal } from "./Animation";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
 
 function ServicesSection() {
+  const [element, controls] = useScroll();
+
   return (
-    <section className={styles.servicesContainer}>
-      <div className={styles.topContent}>
+    <section className={styles.servicesContainer} ref={element}>
+      <motion.div
+        animate={controls}
+        variants={reveal}
+        transition={{ delay: 0.01, stiffness: 300 }}
+        className={styles.topContent}
+      >
         <h2>Services</h2>
         <Link href='/services'>
           <span className={styles.link}>
@@ -17,8 +27,11 @@ function ServicesSection() {
             <CgArrowLongRight className={styles.icon} />
           </span>
         </Link>
-      </div>
-      <div className={styles.bottomContent}>
+      </motion.div>
+      <motion.div
+        animate={controls}
+        variants={reveal}
+        transition={{ delay: 0.01, stiffness: 300 }} className={styles.bottomContent}>
         <div className={styles.cardOne}>
           <h4 className={styles.cardheading}>Hair Cuts</h4>
           <p className={styles.cardDescription} lang='en'>
@@ -49,7 +62,7 @@ function ServicesSection() {
             <Image src={child} alt='icon' />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
