@@ -5,13 +5,15 @@ import styles from "../styles/Layout.module.css";
 
 function Layout({ children }) {
   return (
-    <div className={styles.background}>
+    <div className={styles.container}>
+      <div className={styles.background}>
         <div className={styles.layout}>
           <ScrollToTop />
           <Navbar />
           {children}
           <Footer />
         </div>
+      </div>
     </div>
   );
 }

@@ -9,12 +9,7 @@ function Prefooter({ text }) {
 
   return (
     <div className={styles.prefooterContainer} ref={element}>
-      <motion.div
-        variants={topContainerAnimation}
-        animate={controls}
-        transition={{ duration: 0.3 }}
-        className={styles.content}
-      >
+      <div className={styles.content}>
         <h5 lang='en'>{text}</h5>
         <div className={styles.btnContainer}>
           <Button text='Get Quote' href='/' color='primary' btnSz='large' />
@@ -25,17 +20,17 @@ function Prefooter({ text }) {
             btnSz='large'
           />
         </div>
-      </motion.div>
+      </div>
       <motion.article
         variants={slideLeft}
         animate={controls}
-        transition={{ type: "tween", duration: 0.3 }}
+        transition={{ type: "tween", duration: 0.5 }}
         className={styles.content2}
       ></motion.article>
       <motion.article
         variants={slideRight}
         animate={controls}
-        transition={{ type: "tween", duration: 0.3 }}
+        transition={{ type: "tween", duration: 0.5 }}
         className={styles.content3}
       ></motion.article>
     </div>

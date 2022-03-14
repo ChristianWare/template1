@@ -17,7 +17,7 @@ function ServicesSection() {
       <motion.div
         animate={controls}
         variants={reveal}
-        transition={{ delay: 0.01, stiffness: 300 }}
+        transition={{ delay: 0.1, stiffness: 300 }}
         className={styles.topContent}
       >
         <h2>Services</h2>
@@ -31,7 +31,7 @@ function ServicesSection() {
       <motion.div
         animate={controls}
         variants={reveal}
-        transition={{ delay: 0.01, stiffness: 300 }} className={styles.bottomContent}>
+        transition={{ delay: 0.1, stiffness: 300 }} className={styles.bottomContent}>
         <div className={styles.cardOne}>
           <h4 className={styles.cardheading}>Hair Cuts</h4>
           <p className={styles.cardDescription} lang='en'>

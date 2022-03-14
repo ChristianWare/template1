@@ -58,7 +58,7 @@ function Hero() {
             <motion.picture
               variants={imageAnimation}
               animate={controls}
-              transition={{ duration: .5, type: 'spring' }}
+              transition={{ duration: .5, type: 'spring', stiffness: 120 }}
               className={styles.imageContainer2}
             >
               <Image
