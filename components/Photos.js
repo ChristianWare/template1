@@ -30,8 +30,21 @@ function Photos() {
           transition={{ type: "tween", duration: 0.3 }}
           className={styles.topContainer}
         >
-          <h2 className={styles.heading}>Our Work</h2>
-          <p>What We're Capable of</p>
+          <motion.h2
+            variants={slideLeft}
+            animate={controls}
+            transition={{ duration: 0.3 }}
+            className={styles.heading}
+          >
+            Our Work
+          </motion.h2>
+          <motion.p
+            variants={slideLeft}
+            animate={controls}
+            transition={{ duration: 0.3 }}
+          >
+            What We're Capable of
+          </motion.p>
         </motion.div>
         <motion.div
           variants={slideLeft}

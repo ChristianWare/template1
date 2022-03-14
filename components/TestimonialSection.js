@@ -3,19 +3,29 @@ import Image from "next/image";
 import styles from "../styles/TestimonialSection.module.css";
 import { CgArrowLongRight } from "react-icons/cg";
 import b12 from "../public/images/b12.jpg";
-import b13 from "../public/images/b13.jpg";
-import b14 from "../public/images/b14.jpg";
+import { reveal } from "./Animation";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+
 
 function TestimonialSection() {
+  const [element, controls] = useScroll();
+
   return (
-    <section className={styles.testContainer} id='testimonials'>
-      <div className={styles.topContent}>
+    <section className={styles.testContainer} id='testimonials' ref={element}>
+      <motion.div
+        animate={controls}
+        variants={reveal}
+        transition={{ delay: 0.01, stiffness: 300 }} className={styles.topContent}>
         <h2 lang='en'>Reviews</h2>
         <span className={styles.link}>
           <a>What People Say About Us</a>
         </span>
-      </div>
-      <div className={styles.bottomContent}>
+      </motion.div>
+      <motion.div
+        animate={controls}
+        variants={reveal}
+        transition={{ delay: 0.01, stiffness: 300 }} className={styles.bottomContent}>
         <article className={`${styles.card} ${styles.card1}`}>
           <div className={styles.cardHead1}>
             <picture className={styles.imgContainer}>
@@ -140,7 +150,7 @@ function TestimonialSection() {
             agile team project, in particular, was outstanding.”
           </p>
         </article>
-      </div>
+      </motion.div>
     </section>
   );
 }
