@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Hero from "../components/Hero";
@@ -9,6 +10,8 @@ import ContactSection from "../components/ContactSection";
 import Prefooter from "../components/Prefooter";
 
 export default function Home() {
+  const [coordinates, setCoordinates] = useState({ lat: 0, lng: 0 })
+
   return (
     <>
       <Head>
@@ -16,7 +19,7 @@ export default function Home() {
         <meta name='description' content='This is the first template' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      
+
       <Hero />
       <ServicesSection />
       <AboutSection />
