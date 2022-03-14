@@ -38,40 +38,12 @@
      border-radius: 0px 0px 25px 0px;
  }
 
- .primaryOutline {
-     background-color: var(--accent4);
-     border: 2px solid var(--accent1);
-     color: var(--accent1);
- }
-
   .primaryOutline2 {
       background-color: var(--accent5);
       border: 2px solid var(--accent5);
       color: var(--accent4);
   }
 
-.secondaryOutline {
-    background-color: transparent;
-    border: 2px solid var(--accent2);
-    color: var(--accent2);
-   }
-
-.tertiaryOutline {
-    background-color: transparent;
-    border: 2px solid var(--accent3);
-    color: var(--accent3);
-   }
-
-   .secondary {
-       background-color: var(--accent2);
-       transition: 0.2s ease-in-out;
-   }
-
-   .tertiary {
-       background-color: var(--accent3);
-       color: var(--accent1);
-       transition: 0.2s ease-in-out;
-   }
 
 @media screen and (min-width: 481px) {
 
@@ -79,13 +51,6 @@
      background-color: var(--accent4);
      color: var(--accent1);
  }
-
-
- .primaryOutline:hover {
-     background-color: var(--accent1);
-     color: var(--accent4);
- }
-
   
  .primaryOutline2:hover {
      background-color: var(--accent4);
@@ -94,16 +59,24 @@
 }
 
 @media screen and (max-width: 480px) {
-   .primary {
+   .primary,
+   .primaryOutline2 {
        background-position: center;
        transition: all 0.5s
    }
 
    .primary:active {
-       transition: bacground 0s;
+       transition: background 0s;
        background-color: var(--accent4);
        background-size: 100%;
        color: var(--accent1);
+   }
+
+   .primaryOutline2:active {
+        transition: background 0s;
+        background-color: var(--accent4);
+        background-size: 100%;
+        color: var(--accent5);
    }
 
 }
