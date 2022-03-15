@@ -46,7 +46,12 @@ function Hero() {
               </a>
             </div>
             <div className={styles.btnContainer}>
-              <Button text='contact' href='/#contact' color='primary' className={styles.btnn} />
+              <Button
+                text='contact'
+                href='/#contact'
+                color='primary'
+                className={styles.btnn}
+              />
               <Button
                 text='services'
                 href='/services'
@@ -58,7 +63,7 @@ function Hero() {
             <motion.picture
               variants={imageAnimation}
               animate={controls}
-              transition={{ duration: .5, type: 'spring', stiffness: 120 }}
+              transition={{ duration: 5, type: "spring", stiffness: 200 }}
               className={styles.imageContainer2}
             >
               <Image

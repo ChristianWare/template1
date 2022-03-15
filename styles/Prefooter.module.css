@@ -10,7 +10,7 @@
     justify-content: space-around;
     gap: 5rem;
     padding: 10rem 12rem;
-    background-image: var(--design2);
+    background-image: var(--design2BSZ1rem1rem);
     background-size: 1rem 1rem;
     background-color: var(--accent4);
     color: var(--accent1);

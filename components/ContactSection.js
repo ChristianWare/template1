@@ -1,3 +1,4 @@
+import React, { FormEvent } from "react";
 import styles from "../styles/ContactSection.module.css";
 import Button from "./utils/Button";
 import { MdOutlineLocationOn } from "react-icons/md";
@@ -6,9 +7,13 @@ import { BsTelephoneForward } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
 import { FiYoutube } from "react-icons/fi";
+import axios from "axios";
 
 function ContactSection() {
-  const submitForm = () => {};
+  const formId = "k6f9KfSr";
+  const formSparkUrl = `https://submit-form.com/${formId}`;
+
+  // const submitForm();
 
   return (
     <section className={styles.contactContainer} id='contact'>
@@ -55,7 +60,7 @@ function ContactSection() {
         </div>
         <div className={styles.contactForm}>
           <h2>Send A Message</h2>
-          <form onSubmit={submitForm} className={styles.formBox}>
+          <form className={styles.formBox}>
             <div className={styles.inputBox50}>
               <input type='text' required />
               <span>First Name</span>

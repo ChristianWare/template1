@@ -13,7 +13,7 @@
     var(--accent4) 10px,
     var(--accent4) 10px,
     var(--accent4) 20px);
-    --design2: radial-gradient(var(--accent5) 1px, transparent 2px);
+    --design2BSZ1rem1rem: radial-gradient(var(--accent5) 1px, transparent 2px);
 }
 
 * {
