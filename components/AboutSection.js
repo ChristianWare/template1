@@ -53,17 +53,12 @@ function AboutSection() {
               </Link>
             </div>
             <p className={styles.contnetRightDesciption} lang='en'>
-              Lorem Khaled Ipsum is a major key to success. Don’t ever play
-              yourself. Mogul talk. The key is to drink coconut, fresh coconut,
-              trust me. Celebrate success right, the only way, apple. They never
-              said winning was easy. Some people can’t handle success, I can.
-              It’s on you how you want to live your life. Everyone has a choice.
-              I pick my choice, squeaky clean. Put it this way, it took me
-              twenty five years to get these plants, twenty five years of blood
-              sweat and tears, and I’m never giving up, I’m just getting
-              started. The key to success is to keep your head above the water,
-              never give up. Always remember in the jungle there’s a lot of they
-              in there, after you overcome they, you will make it to paradise.
+              Our barber shop is dedicated for men to relax, freshen their
+              style, and be pampered. Elegant offers a wide range of barbering
+              services including detailed men’s haircuts such as fades, flat
+              tops, tapers, layered haircuts. and a variety of other services
+              such as precise straight razor shaves, beard trims, hot towel
+              shaves. Be sure to call us for more information.
             </p>
           </div>
         </motion.div>

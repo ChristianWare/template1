@@ -68,7 +68,7 @@ function Navbar() {
           </Link>
           <div className={styles.btnContainerMobile}>
             <Button
-              href='tel:602-775-8941'
+              href='/'
               text='602-775-8941'
               color='primaryOutline2'
               btnSz='large2'

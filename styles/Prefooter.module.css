@@ -123,6 +123,12 @@
     }
 }
 
+@media screen and (max-width: 340px) {
+    .content h5 {
+        font-size: 2.1rem;
+    }
+}
+
 /* @media screen and (max-width: 670px) {
     .content h5 {
         text-align: center;

@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 function about() {
 
   return (
-    <div className={styles.container} ref={element}>
+    <div className={styles.container}>
       <section className={styles.servicesContainer}>
         <motion.div
           animate={{ opacity: 1, transition: { duration: 1 } }}
@@ -38,9 +38,7 @@ function about() {
                 services including detailed men’s haircuts such as fades, flat
                 tops, tapers, layered haircuts. and a variety of other services
                 such as precise straight razor shaves, beard trims, hot towel
-                shaves. Be sure to call us for more information. Every service
-                we offer comes with a complimentary drink, because we’re much
-                more than a barbershop.
+                shaves. Be sure to call us for more information.
               </p>
             </div>
           </div>
