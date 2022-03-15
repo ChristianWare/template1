@@ -2,7 +2,7 @@ import styles from "../styles/Prefooter.module.css";
 import Button from "./utils/Button";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
-import { topContainerAnimation, slideLeft, slideRight } from "./Animation";
+import { slideLeft, slideRight } from "./Animation";
 
 function Prefooter({ text }) {
   const [element, controls] = useScroll();
@@ -12,9 +12,9 @@ function Prefooter({ text }) {
       <div className={styles.content}>
         <h5 lang='en'>{text}</h5>
         <div className={styles.btnContainer}>
-          <Button text='Get Quote' href='/' color='primary' btnSz='large' />
+          <Button text='Call' href='tel:602-775-8941' color='primary' btnSz='large' />
           <Button
-            text='Get Quote'
+            text='Contact'
             href='/'
             color='primaryOutline2'
             btnSz='large'
@@ -24,13 +24,13 @@ function Prefooter({ text }) {
       <motion.article
         variants={slideLeft}
         animate={controls}
-        transition={{ type: "tween", duration: 0.5 }}
+        transition={{ type: "spring", stiffness: 120}}
         className={styles.content2}
       ></motion.article>
       <motion.article
         variants={slideRight}
         animate={controls}
-        transition={{ type: "tween", duration: 0.5 }}
+        transition={{ type: "spring", stiffness: 120}}
         className={styles.content3}
       ></motion.article>
     </div>

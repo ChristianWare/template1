@@ -13,57 +13,66 @@ function ServicesSection() {
   const [element, controls] = useScroll();
 
   return (
-    <section className={styles.servicesContainer} ref={element}>
-      <motion.div
-        animate={controls}
-        variants={reveal}
-        transition={{ delay: 0.1, stiffness: 300 }}
-        className={styles.topContent}
+    <div className={styles.container}>
+      <motion.section
+        animate={{ opacity: 1, transition: { duration: 1 } }}
+        initial={{ opacity: 0 }}
+        className={styles.servicesContainer}
+        ref={element}
       >
-        <h2>Services</h2>
-        <Link href='/services'>
-          <span className={styles.link}>
-            <a>See All Services</a>
-            <CgArrowLongRight className={styles.icon} />
-          </span>
-        </Link>
-      </motion.div>
-      <motion.div
-        animate={controls}
-        variants={reveal}
-        transition={{ delay: 0.1, stiffness: 300 }} className={styles.bottomContent}>
-        <div className={styles.cardOne}>
-          <h4 className={styles.cardheading}>Hair Cuts</h4>
-          <p className={styles.cardDescription} lang='en'>
-            We can cut your hair in any style you want. There isnt a style we
-            havent seen. From fades to flat tops, We've got you covered.
-          </p>
-          <div className={styles.placeHolderImage}>
-            <Image src={haircut} alt='icon' />
+        <motion.div
+          animate={controls}
+          variants={reveal}
+          transition={{ delay: 0.1, stiffness: 300 }}
+          className={styles.topContent}
+        >
+          <h2>Services</h2>
+          <Link href='/services'>
+            <span className={styles.link}>
+              <a>See All Services</a>
+              <CgArrowLongRight className={styles.icon} />
+            </span>
+          </Link>
+        </motion.div>
+        <motion.div
+          animate={controls}
+          variants={reveal}
+          transition={{ delay: 0.1, stiffness: 300 }}
+          className={styles.bottomContent}
+        >
+          <div className={styles.cardOne}>
+            <h4 className={styles.cardheading}>Hair Cuts</h4>
+            <p className={styles.cardDescription} lang='en'>
+              We can cut your hair in any style you want. There isnt a style we
+              havent seen. From fades to flat tops, We've got you covered.
+            </p>
+            <div className={styles.placeHolderImage}>
+              <Image src={haircut} alt='icon' />
+            </div>
           </div>
-        </div>
-        <div className={styles.cardTwo}>
-          <h4 className={styles.cardheading}>Beards</h4>
-          <p className={styles.cardDescription} lang='en'>
-            Beard grooming has never been so easy. Let a professional do it, and
-            We will keep your facial hair looking resplendent.
-          </p>
-          <div className={styles.placeHolderImage}>
-            <Image src={beard} alt='icon' />
+          <div className={styles.cardTwo}>
+            <h4 className={styles.cardheading}>Beards</h4>
+            <p className={styles.cardDescription} lang='en'>
+              Beard grooming has never been so easy. Let a professional do it,
+              and We will keep your facial hair looking resplendent.
+            </p>
+            <div className={styles.placeHolderImage}>
+              <Image src={beard} alt='icon' />
+            </div>
           </div>
-        </div>
-        <div className={styles.cardThree}>
-          <h4 className={styles.cardheading}>Children</h4>
-          <p className={styles.cardDescription} lang='en'>
-            Kids welcome! We will work with you and your children to give them
-            the best cut possible.
-          </p>
-          <div className={styles.placeHolderImage}>
-            <Image src={child} alt='icon' />
+          <div className={styles.cardThree}>
+            <h4 className={styles.cardheading}>Children</h4>
+            <p className={styles.cardDescription} lang='en'>
+              Kids welcome! We will work with you and your children to give them
+              the best cut possible.
+            </p>
+            <div className={styles.placeHolderImage}>
+              <Image src={child} alt='icon' />
+            </div>
           </div>
-        </div>
-      </motion.div>
-    </section>
+        </motion.div>
+      </motion.section>
+    </div>
   );
 }
 

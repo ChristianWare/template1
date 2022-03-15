@@ -46,7 +46,7 @@ function Hero() {
               </a>
             </div>
             <div className={styles.btnContainer}>
-              <Button text='contact' href='/#contact' color='primary' />
+              <Button text='contact' href='/#contact' color='primary' className={styles.btnn} />
               <Button
                 text='services'
                 href='/services'

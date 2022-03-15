@@ -1,5 +1,5 @@
  .btn {
-     position: relative;
+     /* position: relative; */
      display: flex;
      align-items: center;
      justify-content: center;
@@ -12,6 +12,16 @@
  }
 
  .large {
+     padding: 15px 45px;
+     position: relative;
+     font-size: 1.6rem;
+     font-weight: bold;
+     text-align: center;
+     white-space: nowrap;
+     z-index: 5;
+ }
+
+ .large2 {
      padding: 15px 45px;
      position: relative;
      font-size: 1.6rem;

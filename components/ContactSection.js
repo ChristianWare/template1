@@ -6,11 +6,21 @@ import { BsTelephoneForward } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
 import { FiYoutube } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { cardAnimation } from './Animation'
 
 function ContactSection() {
+  const [element, controls] = useScroll();
+
   return (
-    <section className={styles.contactContainer} id='contact'>
-      <div className={styles.container}>
+    <section className={styles.contactContainer} id='contact' ref={element}>
+      <motion.div
+        variants={cardAnimation}
+        animate={controls}
+        transition={{ duration: .3, type: "tween"}}
+        className={styles.container}
+      >
         <div className={styles.contactInfo}>
           <div className={styles.unnammed}>
             <h2>Contact Info</h2>
@@ -79,7 +89,7 @@ function ContactSection() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
