@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneForward } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
+import { AiFillCheckCircle } from "react-icons/ai";
 import { FiYoutube } from "react-icons/fi";
 
 function ContactSection() {
@@ -160,7 +161,7 @@ function ContactSection() {
             ) : form.state === "error" ? (
               <div className={styles.msg}>{form.message}</div>
             ) : (
-              form.state === "success" && <div className={styles.msg}>Sent successfully!</div>
+              form.state === "success" && <div className={styles.msg}><AiFillCheckCircle className={styles.icon} />Sent successfully!</div>
             )}
           </form>
         </div>
