@@ -161,7 +161,7 @@ function ContactSection() {
             ) : form.state === "error" ? (
               <div className={styles.msg}>{form.message}</div>
             ) : (
-              form.state === "success" && <div className={styles.msg}><AiFillCheckCircle className={styles.icon} />Sent successfully!</div>
+              form.state === "success" && <div className={styles.msg}><AiFillCheckCircle className={styles.icon2} />Sent successfully!</div>
             )}
           </form>
         </div>
