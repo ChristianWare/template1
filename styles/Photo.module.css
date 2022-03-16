@@ -1,7 +1,6 @@
 .photosContainer {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     margin-bottom: 15rem;
 
@@ -57,10 +56,8 @@
 
 .icon {
     font-size: 4rem;
-    color: var(--accent1) !important;
+    color: var(--accent4);
 }
-
-
 
 .boxContainer {
     display: grid;
@@ -89,8 +86,7 @@
 .box4B,
 .box5B
 {
-    position: relative;
-    
+    position: relative;  
 }
 
 .box3,
@@ -102,11 +98,11 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 3rem 3rem 1rem 2rem ;
+    cursor: pointer;
 }
 
 .box3 {
     background-color: var(--accent3);
-    color: var(--accent1);
 }
 
 .box2B {
@@ -117,6 +113,7 @@
    align-items: flex-start;
    justify-content: space-between;
    padding: 3rem 3rem 1rem 2rem;
+   cursor: pointer;
 }
 
 .box4
@@ -128,16 +125,7 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 3rem 3rem 1rem 2rem;
-}
-
-.icon {
-    font-size: 4rem;
-    color: var(--accent4);
-}
-
-.iconBeard {
-    font-size: 4rem;
-    color: var(--accent1);
+    cursor: pointer;
 }
 
 .boxContainer2 {

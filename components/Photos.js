@@ -52,24 +52,24 @@ function Photos() {
           <div className={styles.box2}>
             <Image src={b3} layout='fill' objectFit='cover' />
           </div>
-          <div className={styles.box3}>
-            <h5>Beards</h5>
+          <Link href='/services/#beards'>
+            <motion.div whileTap={{ scale: 0.9 }} className={styles.box3}>
+              <h5>Beards</h5>
 
-            <Link href='/services/#beards'>
-              <a>
-                <CgArrowLongRight className={styles.iconBeard} />
-              </a>
-            </Link>
-          </div>
-          <div className={styles.box4}>
-            <h5>Hair Cuts</h5>
-
-            <Link href='/services/#haircuts'>
               <a>
                 <CgArrowLongRight className={styles.icon} />
               </a>
-            </Link>
-          </div>
+            </motion.div>
+          </Link>
+          <Link href='/services/#haircuts'>
+            <motion.div whileTap={{ scale: 0.9 }} className={styles.box4}>
+              <h5>Hair Cuts</h5>
+
+              <a>
+                <CgArrowLongRight className={styles.icon} />
+              </a>
+            </motion.div>
+          </Link>
           <div className={styles.box5}>
             <Image src={b4} layout='fill' objectFit='cover' />
           </div>
@@ -83,27 +83,27 @@ function Photos() {
           <div className={styles.box1B}>
             <Image src={b5} layout='fill' objectFit='cover' />
           </div>
-          <div className={styles.box2B}>
-            <h5>Children</h5>
+          <Link href='/services/#children'>
+            <motion.div whileTap={{ scale: 0.9 }} className={styles.box2B}>
+              <h5>Children</h5>
 
-            <Link href='/services/#children'>
               <a>
                 <CgArrowLongRight className={styles.icon} />
               </a>
-            </Link>
-          </div>
+            </motion.div>
+          </Link>
           <div className={styles.box3B}>
             <Image src={b6} layout='fill' objectFit='cover' />
           </div>
-          <div className={styles.box4B}>
-            <h5>Hair Cuts</h5>
+          <Link href='/services/#haircuts'>
+            <motion.div whileTap={{ scale: 0.9 }} className={styles.box4B}>
+              <h5>Hair Cuts</h5>
 
-            <Link href='/services/#haircuts'>
               <a>
                 <CgArrowLongRight className={styles.icon} />
               </a>
-            </Link>
-          </div>
+            </motion.div>
+          </Link>
           <div className={styles.box5B}>
             <Image src={b7} layout='fill' objectFit='cover' />
           </div>

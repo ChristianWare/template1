@@ -37,8 +37,15 @@
     position: relative;
 }
 
-.img {
-    position: absolute;
+@media screen and (min-width: 481px) {
+    .img {
+        position: absolute;
+        transition: all 0.3s ease-in;
+    }
+
+    .img:hover {
+        transform: scale(1.5);
+    }
 }
 
 @media screen and (max-width: 768px) {
