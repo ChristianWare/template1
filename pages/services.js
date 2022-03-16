@@ -12,11 +12,9 @@ import b9 from "../public/images/b9.jpg";
 import Prefooter from "../components/Prefooter";
 import { motion } from "framer-motion";
 import { imageAnimation } from "../components/Animation";
-import { useScroll } from "../components/useScroll";
 import SEO from "../components/SEO";
 
 function services() {
-  const [element, controls] = useScroll();
 
   return (
     <>
@@ -24,7 +22,7 @@ function services() {
         title='Comany Name || Services'
         description='Welcome to the Services of XYZ, take a look at our services and prices.'
       />
-      <div className={styles.container} ref={element}>
+      <div className={styles.container}>
         <motion.div
           animate={{ opacity: 1, transition: { duration: 1 } }}
           initial={{ opacity: 0 }}
@@ -44,13 +42,11 @@ function services() {
             </div>
             <motion.div
               variants={imageAnimation}
-              animate={controls}
               transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
               className={styles.topRight}
             >
               <div
                 variants={imageAnimation}
-                animate={controls}
                 transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
                 className={styles.topImgContainer}
               >
