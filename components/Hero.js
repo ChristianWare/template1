@@ -3,14 +3,9 @@ import styles from "../styles/Hero.module.css";
 import Button from "./utils/Button";
 import img1 from "../public/images/b3.jpg";
 import { motion } from "framer-motion";
-import { topContainerAnimation, imageAnimation } from "./Animation";
-import { useScroll } from "./useScroll";
 import SEO from "./SEO";
 
-
 function Hero() {
-  const [element, controls] = useScroll();
-
   const map =
     "https://www.google.com/maps/place/5100+N+99th+Ave,+Phoenix,+AZ+85037/@33.509981,-112.2757085,17z/data=!3m1!4b1!4m5!3m4!1s0x872b4172f9f02973:0x4dc3ba54f817a0fa!8m2!3d33.509981!4d-112.2735198";
 
@@ -20,13 +15,8 @@ function Hero() {
         title='Comany Name'
         description='Welcome to the homepage of XYZ, the only place to get all of your XYZ Needs.'
       />
-      <div className={styles.container} ref={element}>
-        <motion.header
-          variants={topContainerAnimation}
-          animate={controls}
-          transition={{ duration: 0.3 }}
-          className={styles.heroContainer}
-        >
+      <div className={styles.container}>
+        <header className={styles.heroContainer}>
           <motion.div
             animate={{ opacity: 1, transition: { duration: 1 } }}
             initial={{ opacity: 0 }}
@@ -67,12 +57,7 @@ function Hero() {
               </div>
             </div>
             <div className={styles.contentRight}>
-              <motion.picture
-                variants={imageAnimation}
-                animate={controls}
-                transition={{ duration: 5, type: "spring", stiffness: 200 }}
-                className={styles.imageContainer2}
-              >
+              <picture className={styles.imageContainer2}>
                 <Image
                   src={img1}
                   alt=''
@@ -80,10 +65,10 @@ function Hero() {
                   height={500}
                   objectFit='cover'
                 />
-              </motion.picture>
+              </picture>
             </div>
           </motion.div>
-        </motion.header>
+        </header>
       </div>
     </>
   );

@@ -9,27 +9,12 @@ import b5 from "../public/images/b5.jpg";
 import b6 from "../public/images/b6.jpg";
 import b7 from "../public/images/b7.jpg";
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { topContainerAnimation, slideLeft, slideRight } from "./Animation";
 
 function Photos() {
-  const [element, controls] = useScroll();
-
   return (
-    <div className={styles.container} ref={element}>
-      <motion.section
-        variants={topContainerAnimation}
-        animate={controls}
-        transition={{ duration: 0.3 }}
-        className={styles.photosContainer}
-        id='photos'
-      >
-        <motion.div
-          variants={slideLeft}
-          animate={controls}
-          transition={{ type: "tween", duration: 0.3 }}
-          className={styles.topContainer}
-        >
+    <div className={styles.container}>
+      <section className={styles.photosContainer} id='photos'>
+        <div className={styles.topContainer}>
           <h2 className={styles.heading}>Our Work</h2>
           <div className={styles.btnContainer}>
             <Link href='/gallery' passHref>
@@ -39,13 +24,8 @@ function Photos() {
               </span>
             </Link>
           </div>
-        </motion.div>
-        <motion.div
-          variants={slideLeft}
-          animate={controls}
-          transition={{ type: "tween", duration: 0.3 }}
-          className={styles.boxContainer}
-        >
+        </div>
+        <div className={styles.boxContainer}>
           <div className={styles.box1}>
             <Image
               src={b1}
@@ -88,13 +68,8 @@ function Photos() {
               objectFit='cover'
             />
           </div>
-        </motion.div>
-        <motion.div
-          variants={slideLeft}
-          animate={controls}
-          transition={{ type: "tween", duration: 0.4 }}
-          className={styles.boxContainer2}
-        >
+        </div>
+        <div className={styles.boxContainer2}>
           <div className={styles.box1B}>
             <Image
               src={b5}
@@ -137,8 +112,8 @@ function Photos() {
               objectFit='cover'
             />
           </div>
-        </motion.div>
-      </motion.section>
+        </div>
+      </section>
     </div>
   );
 }

@@ -4,24 +4,15 @@ import { CgArrowLongRight } from "react-icons/cg";
 import styles from "../styles/AboutSection.module.css";
 import b6 from "../public/images/b6.jpg";
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { topContainerAnimation, slideLeft, slideRight } from "./Animation";
 
 function AboutSection() {
-  const [element, controls] = useScroll();
 
   return (
-    <div className={styles.container} ref={element}>
-      <motion.section
-        variants={topContainerAnimation}
-        animate={controls}
-        transition={{ duration: 0.3 }}
+    <div className={styles.container}>
+      <section
         className={styles.AboutSectionContainer}
       >
-        <motion.div
-          variants={slideLeft}
-          animate={controls}
-          transition={{ type: "tween", duration: 0.3 }}
+        <div
           className={styles.contentLeft}
         >
           <picture className={styles.contentLeftA}>
@@ -34,11 +25,8 @@ function AboutSection() {
               className={styles.img}
             />
           </picture>
-        </motion.div>
-        <motion.div
-          variants={slideRight}
-          animate={controls}
-          transition={{ type: "tween", duration: 0.3 }}
+        </div>
+        <div
           className={styles.contentRight}
         >
           <div className={styles.contentRightA}>
@@ -61,8 +49,8 @@ function AboutSection() {
               shaves. Be sure to call us for more information.
             </p>
           </div>
-        </motion.div>
-      </motion.section>
+        </div>
+      </section>
     </div>
   );
 }

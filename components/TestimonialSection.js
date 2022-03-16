@@ -1,31 +1,21 @@
 import Image from "next/image";
 import styles from "../styles/TestimonialSection.module.css";
 import b12 from "../public/images/b12.jpg";
-import { reveal } from "./Animation";
-import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
 
 
 function TestimonialSection() {
-  const [element, controls] = useScroll();
 
   return (
-    <section className={styles.testContainer} id='testimonials' ref={element}>
-      <motion.div
-        animate={controls}
-        variants={reveal}
-        transition={{ delay: 0.01, stiffness: 300 }}
+    <section className={styles.testContainer} id='testimonials'>
+      <div
         className={styles.topContent}
       >
         <h2 lang='en'>Reviews</h2>
         <span className={styles.link}>
           <a>What People Say About Us</a>
         </span>
-      </motion.div>
-      <motion.div
-        animate={controls}
-        variants={reveal}
-        transition={{ delay: 0.01, stiffness: 300 }}
+      </div>
+      <div
         className={styles.bottomContent}
       >
         <article className={`${styles.card} ${styles.card1}`}>
@@ -162,7 +152,7 @@ function TestimonialSection() {
             and conventionally located for us too. ”
           </p>
         </article>
-      </motion.div>
+      </div>
     </section>
   );
 }
