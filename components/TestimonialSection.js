@@ -16,7 +16,9 @@ function TestimonialSection() {
       <motion.div
         animate={controls}
         variants={reveal}
-        transition={{ delay: 0.01, stiffness: 300 }} className={styles.topContent}>
+        transition={{ delay: 0.01, stiffness: 300 }}
+        className={styles.topContent}
+      >
         <h2 lang='en'>Reviews</h2>
         <span className={styles.link}>
           <a>What People Say About Us</a>
@@ -25,7 +27,9 @@ function TestimonialSection() {
       <motion.div
         animate={controls}
         variants={reveal}
-        transition={{ delay: 0.01, stiffness: 300 }} className={styles.bottomContent}>
+        transition={{ delay: 0.01, stiffness: 300 }}
+        className={styles.bottomContent}
+      >
         <article className={`${styles.card} ${styles.card1}`}>
           <div className={styles.cardHead1}>
             <picture className={styles.imgContainer}>
@@ -44,10 +48,12 @@ function TestimonialSection() {
             </div>
           </div>
           <p className={styles.cardDetail1}>
-            “ I was an EMT for many years before I joined the bootcamp. I’ve
-            been looking to make a transition and have heard some people who had
-            an amazing experience here. I signed up for the free intro course
-            and found it incredibly fun! I enrolled shortly thereafter. ”
+            “ All the barbers have good customer service, they will even give
+            you their personal phone numbers so you can schedule an appointment.
+            All barbers our great, but I do recommend the first chair when you
+            enter. Shop is always clean and provides good entertainment for all
+            ages. They also provide a restroom and snack/or drinks for a small
+            fee. This Barbershop is where to go! ”
           </p>
         </article>
         <article className={`${styles.card} ${styles.card2}`}>
@@ -68,9 +74,13 @@ function TestimonialSection() {
             </div>
           </div>
           <p className={styles.cardDetail}>
-            “ I started as a total newbie with virtually no coding skills. I now
-            work as a mobile engineer for a big company. This was one of the
-            best investments I’ve made in myself. ”
+            “ This is a first class barbershop and the barbers who work there
+            are consumate professionals. Not only do you get a great haircut,
+            you get greeted with a big smile and welcome from the barbers. The
+            establishment is clean and comfortable to sit in. They have several
+            big screen TVs to watch while you wait. My barber is Mr. T. Smack .
+            He is accomadting in making appointments and is always on time.
+            Great service and great barbers!! ”
           </p>
         </article>
         <article className={`${styles.card} ${styles.card3}`}>
@@ -91,12 +101,15 @@ function TestimonialSection() {
             </div>
           </div>
           <p className={styles.cardDetail}>
-            “ Thank you for the wonderful experience! I now have a job I really
-            enjoy, and make a good living while doing something I love. Before
-            joining the bootcamp, I’ve never written a line of code. I needed
-            some structure from professionals who can help me learn programming
-            step by step. The agile team project, in particular, was
-            outstanding.”
+            “ Smack has been cutting my hair almost ten years now. This
+            barbershop is a great place to get a quality haircut. The barbers
+            are knowledgeable and skilled professionals. The prices are more
+            than fair for the quality they provide and the atmosphere is exactly
+            that of a real barbershop. Great music, tv, or sports are on for
+            your entertainment during the cut. Personally, I enjoy conversation
+            with my barber. It’s a great place to decompress and have yourself
+            manicured by the best. Appreciate all the barbers in this shop,
+            stand up people. ”
           </p>
         </article>
         <article className={`${styles.card} ${styles.card4}`}>
@@ -117,10 +130,10 @@ function TestimonialSection() {
             </div>
           </div>
           <p className={styles.cardDetail}>
-            “ The staff seem genuinely concerned about my progress which I find
-            really refreshing. The program gave me the confidence necessary to
-            be able to go out in the world and present myself as a capable
-            junior developer. The standard is above the rest. ”
+            “ Cool little spot with some GREAT barbers. I've been gettin cut by
+            one of the guys for years now. I highly recommend them. They used to
+            be appointment only but recently I noticed a sign out front
+            welcoming walk ins. Just be aware you may not get in immediately. ”
           </p>
         </article>
         <article className={`${styles.card} ${styles.card5}`}>
@@ -141,13 +154,14 @@ function TestimonialSection() {
             </div>
           </div>
           <p className={styles.cardDetail}>
-            “ Before joining the bootcamp, I’ve never written a line of code. I
-            needed some structure from professionals who can help me learn
-            programming step by step. I was encouraged to enroll by a former
-            student of theirs who can only say wonderful things about the
-            program. The entire curriculum and staff did not disappoint. They
-            were very hands-on and I never had to wait long for assistance. The
-            agile team project, in particular, was outstanding.”
+            “ All the barbers are professional and attentive to their clients
+            needs. I have seen them cut men, women and children's hair. The shop
+            has everything you could want (e.g. good conversations, laughs,
+            television's, music and cleanliness). Stop by and give them a visit.
+            You won't be disappointed.Troy is an awesome barber! He is reliable,
+            professional, and skillful at cutting hair. He has managed my son's
+            hair for about 3 years now. The shop is clean and conventionally
+            located for us too. ”
           </p>
         </article>
       </motion.div>
