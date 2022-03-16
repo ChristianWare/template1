@@ -56,9 +56,9 @@ function Navbar() {
               <a onClick={openMenu}>About</a>
             </li>
           </Link>
-          <Link href='/#photos'>
+          <Link href='/gallery'>
             <li className={styles.navItem}>
-              <a onClick={openMenu}>Photos</a>
+              <a onClick={openMenu}>Gallery</a>
             </li>
           </Link>
           <Link href='/#contact'>

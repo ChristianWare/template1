@@ -15,8 +15,7 @@ function about() {
         <motion.div
           animate={{ opacity: 1, transition: { duration: 1 } }}
           initial={{ opacity: 0 }}
-          className={styles.topContent}
-        >
+          className={styles.topContent}>
           <h1 className={styles.heading}>About Us.</h1>
           <h5 lang='en'>
             We believe that going to the barber shop should be more than an
