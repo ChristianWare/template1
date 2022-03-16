@@ -65,11 +65,11 @@ function about() {
           <div className={styles.contentBottom2}>
             <h2 className={styles.subHeading2}>Our People</h2>
             <p className={styles.subP}>
-              Our shop has a team of dedicated Barbers who's ambition is helping
-              their clients increase their confidence by helping them disover
-              thier look. Let's meet them:
+              Our shop has a team of dedicated Barbers who&apos;s ambition is
+              helping their clients increase their confidence by helping them
+              disover thier look. Let&apos;s meet them:
             </p>
-           
+
             <div className={styles.contentbottom3}>
               <div className={styles.left}>
                 <div className={styles.contentLeftA}>
@@ -138,7 +138,6 @@ function about() {
                     width={475}
                     height={475}
                     objectFit='cover'
-                    
                   />
                 </picture>
               </div>

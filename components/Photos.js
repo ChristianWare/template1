@@ -9,11 +9,11 @@ import b5 from "../public/images/b5.jpg";
 import b6 from "../public/images/b6.jpg";
 import b7 from "../public/images/b7.jpg";
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
+import { UseScroll } from "./UseScroll";
 import { topContainerAnimation, slideLeft, slideRight } from "./Animation";
 
 function Photos() {
-  const [element, controls] = useScroll();
+  const [element, controls] = UseScroll();
 
   return (
     <div className={styles.container} ref={element}>
@@ -32,7 +32,7 @@ function Photos() {
         >
           <h2 className={styles.heading}>Our Work</h2>
           <div className={styles.btnContainer}>
-            <Link href='/gallery'>
+            <Link href='/gallery' passHref>
               <span className={styles.link}>
                 <a>Read More</a>
                 <CgArrowLongRight className={styles.icon1} />
@@ -47,12 +47,22 @@ function Photos() {
           className={styles.boxContainer}
         >
           <div className={styles.box1}>
-            <Image src={b1} layout='fill' objectFit='cover' />
+            <Image
+              src={b1}
+              alt='baerber image'
+              layout='fill'
+              objectFit='cover'
+            />
           </div>
           <div className={styles.box2}>
-            <Image src={b3} layout='fill' objectFit='cover' />
+            <Image
+              src={b3}
+              alt='baerber image'
+              layout='fill'
+              objectFit='cover'
+            />
           </div>
-          <Link href='/services/#beards'>
+          <Link href='/services/#beards' passHref>
             <motion.div whileTap={{ scale: 0.9 }} className={styles.box3}>
               <h5>Beards</h5>
 
@@ -61,7 +71,7 @@ function Photos() {
               </a>
             </motion.div>
           </Link>
-          <Link href='/services/#haircuts'>
+          <Link href='/services/#haircuts' passHref>
             <motion.div whileTap={{ scale: 0.9 }} className={styles.box4}>
               <h5>Hair Cuts</h5>
 
@@ -71,7 +81,12 @@ function Photos() {
             </motion.div>
           </Link>
           <div className={styles.box5}>
-            <Image src={b4} layout='fill' objectFit='cover' />
+            <Image
+              src={b4}
+              alt='barber image'
+              layout='fill'
+              objectFit='cover'
+            />
           </div>
         </motion.div>
         <motion.div
@@ -81,9 +96,14 @@ function Photos() {
           className={styles.boxContainer2}
         >
           <div className={styles.box1B}>
-            <Image src={b5} layout='fill' objectFit='cover' />
+            <Image
+              src={b5}
+              alt='barber image'
+              layout='fill'
+              objectFit='cover'
+            />
           </div>
-          <Link href='/services/#children'>
+          <Link href='/services/#children' passHref>
             <motion.div whileTap={{ scale: 0.9 }} className={styles.box2B}>
               <h5>Children</h5>
 
@@ -93,9 +113,14 @@ function Photos() {
             </motion.div>
           </Link>
           <div className={styles.box3B}>
-            <Image src={b6} layout='fill' objectFit='cover' />
+            <Image
+              src={b6}
+              alt='baerber image'
+              layout='fill'
+              objectFit='cover'
+            />
           </div>
-          <Link href='/services/#haircuts'>
+          <Link href='/services/#haircuts' passHref>
             <motion.div whileTap={{ scale: 0.9 }} className={styles.box4B}>
               <h5>Hair Cuts</h5>
 
@@ -105,7 +130,12 @@ function Photos() {
             </motion.div>
           </Link>
           <div className={styles.box5B}>
-            <Image src={b7} layout='fill' objectFit='cover' />
+            <Image
+              src={b7}
+              alt='baerber image'
+              layout='fill'
+              objectFit='cover'
+            />
           </div>
         </motion.div>
       </motion.section>

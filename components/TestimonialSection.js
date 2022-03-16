@@ -1,15 +1,13 @@
-import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/TestimonialSection.module.css";
-import { CgArrowLongRight } from "react-icons/cg";
 import b12 from "../public/images/b12.jpg";
 import { reveal } from "./Animation";
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
+import { UseScroll } from "./UseScroll";
 
 
 function TestimonialSection() {
-  const [element, controls] = useScroll();
+  const [element, controls] = UseScroll();
 
   return (
     <section className={styles.testContainer} id='testimonials' ref={element}>
@@ -107,9 +105,9 @@ function TestimonialSection() {
             than fair for the quality they provide and the atmosphere is exactly
             that of a real barbershop. Great music, tv, or sports are on for
             your entertainment during the cut. Personally, I enjoy conversation
-            with my barber. It’s a great place to decompress and have yourself
-            manicured by the best. Appreciate all the barbers in this shop,
-            stand up people. ”
+            with my barber. It&apos;s a great place to decompress and have
+            yourself manicured by the best. Appreciate all the barbers in this
+            shop, stand up people. ”
           </p>
         </article>
         <article className={`${styles.card} ${styles.card4}`}>
@@ -130,9 +128,9 @@ function TestimonialSection() {
             </div>
           </div>
           <p className={styles.cardDetail}>
-            “ Cool little spot with some GREAT barbers. I've been gettin cut by
-            one of the guys for years now. I highly recommend them. They used to
-            be appointment only but recently I noticed a sign out front
+            “ Cool little spot with some GREAT barbers. I&apos;ve been gettin
+            cut by one of the guys for years now. I highly recommend them. They
+            used to be appointment only but recently I noticed a sign out front
             welcoming walk ins. Just be aware you may not get in immediately. ”
           </p>
         </article>
@@ -155,13 +153,13 @@ function TestimonialSection() {
           </div>
           <p className={styles.cardDetail}>
             “ All the barbers are professional and attentive to their clients
-            needs. I have seen them cut men, women and children's hair. The shop
-            has everything you could want (e.g. good conversations, laughs,
-            television's, music and cleanliness). Stop by and give them a visit.
-            You won't be disappointed.Troy is an awesome barber! He is reliable,
-            professional, and skillful at cutting hair. He has managed my son's
-            hair for about 3 years now. The shop is clean and conventionally
-            located for us too. ”
+            needs. I have seen them cut men, women and children&apos;s hair. The
+            shop has everything you could want (e.g. good conversations, laughs,
+            television&apos;s, music and cleanliness). Stop by and give them a
+            visit. You won&apos;t be disappointed.Troy is an awesome barber! He
+            is reliable, professional, and skillful at cutting hair. He has
+            managed my son&apos;s hair for about 3 years now. The shop is clean
+            and conventionally located for us too. ”
           </p>
         </article>
       </motion.div>

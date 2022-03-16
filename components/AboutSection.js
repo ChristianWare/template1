@@ -4,11 +4,11 @@ import { CgArrowLongRight } from "react-icons/cg";
 import styles from "../styles/AboutSection.module.css";
 import b6 from "../public/images/b6.jpg";
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
+import { UseScroll } from "./UseScroll";
 import { topContainerAnimation, slideLeft, slideRight } from "./Animation";
 
 function AboutSection() {
-  const [element, controls] = useScroll();
+  const [element, controls] = UseScroll();
 
   return (
     <div className={styles.container} ref={element}>
@@ -45,7 +45,7 @@ function AboutSection() {
             <h2>Our Origin Story</h2>
 
             <div className={styles.btnContainer}>
-              <Link href='/about'>
+              <Link href='/about' passHref>
                 <span className={styles.link}>
                   <a>Read More</a>
                   <CgArrowLongRight className={styles.icon} />

@@ -1,11 +1,11 @@
 import styles from "../styles/Prefooter.module.css";
 import Button from "./utils/Button";
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
+import { UseScroll } from "./UseScroll";
 import { slideLeft, slideRight } from "./Animation";
 
 function Prefooter({ text }) {
-  const [element, controls] = useScroll();
+  const [element, controls] = UseScroll();
 
   return (
     <div className={styles.prefooterContainer} ref={element}>

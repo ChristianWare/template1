@@ -7,10 +7,10 @@ import child from "../public/images/child.svg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { reveal, slideLeft, slideRight, cardAnimation } from "./Animation";
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
+import { UseScroll } from "./UseScroll";
 
 function ServicesSection() {
-  const [element, controls] = useScroll();
+  const [element, controls] = UseScroll();
 
   return (
     <div className={styles.container}>
@@ -27,7 +27,7 @@ function ServicesSection() {
           className={styles.topContent}
         >
           <h2>Services</h2>
-          <Link href='/services'>
+          <Link href='/services' passHref>
             <span className={styles.link}>
               <a>See All Services</a>
               <CgArrowLongRight className={styles.icon} />
@@ -44,7 +44,7 @@ function ServicesSection() {
             <h4 className={styles.cardheading}>Hair Cuts</h4>
             <p className={styles.cardDescription} lang='en'>
               We can cut your hair in any style you want. There isnt a style we
-              havent seen. From fades to flat tops, We've got you covered.
+              havent seen. From fades to flat tops, We&apos;ve got you covered.
             </p>
             <div className={styles.placeHolderImage}>
               <Image src={haircut} alt='icon' />

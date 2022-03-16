@@ -4,12 +4,12 @@ import Button from "./utils/Button";
 import img1 from "../public/images/b3.jpg";
 import { motion } from "framer-motion";
 import { topContainerAnimation, imageAnimation } from "./Animation";
-import { useScroll } from "./useScroll";
+import { UseScroll } from "./UseScroll";
 import SEO from "./SEO";
 
 
 function Hero() {
-  const [element, controls] = useScroll();
+  const [element, controls] = UseScroll();
 
   const map =
     "https://www.google.com/maps/place/5100+N+99th+Ave,+Phoenix,+AZ+85037/@33.509981,-112.2757085,17z/data=!3m1!4b1!4m5!3m4!1s0x872b4172f9f02973:0x4dc3ba54f817a0fa!8m2!3d33.509981!4d-112.2735198";
@@ -41,10 +41,10 @@ function Hero() {
                 related services that you do and include the city, state of your
                 service area.
               </h5>
-  
+
               <div className={styles.infoBox}>
                 <p className={styles.hours}>Monday - Saturday 9AM - 6PM</p>
-                <a href={map} target='_blank'>
+                <a href={map} target='_blank' rel='noreferrer'>
                   <address className={styles.address}>
                     5100 w Camelback Rd
                     <br />

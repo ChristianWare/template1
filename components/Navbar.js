@@ -27,7 +27,7 @@ function Navbar() {
       className={styles.header}
     >
       <nav className={styles.navbar}>
-        <Link href='/'>
+        <Link href='/' passHref>
           <span className={styles.navbarLogo}>
             <RiVipCrownFill className={styles.navbarIcon} />
             <a>Company Name</a>
@@ -41,27 +41,27 @@ function Navbar() {
               : styles.navmenu + " " + styles.active
           }
         >
-          <Link href='/'>
+          <Link href='/' passHref>
             <li className={styles.navItem}>
               <a onClick={openMenu}>Home</a>
             </li>
           </Link>
-          <Link href='/services'>
+          <Link href='/services' passHref>
             <li className={styles.navItem}>
               <a onClick={openMenu}>Services</a>
             </li>
           </Link>
-          <Link href='/about'>
+          <Link href='/about' passHref>
             <li className={styles.navItem}>
               <a onClick={openMenu}>About</a>
             </li>
           </Link>
-          <Link href='/gallery'>
+          <Link href='/gallery' passHref>
             <li className={styles.navItem}>
               <a onClick={openMenu}>Gallery</a>
             </li>
           </Link>
-          <Link href='/#contact'>
+          <Link href='/#contact' passHref>
             <li className={styles.navItem}>
               <a onClick={openMenu}>Contact</a>
             </li>

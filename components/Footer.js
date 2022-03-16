@@ -11,7 +11,7 @@ function Footer() {
       <footer className={styles.footerBottom}>
         <div className={styles.footerContent}>
           <div className={styles.footerLeft}>
-            <Link href='/'>
+            <Link href='/' passHref>
               <span className={styles.navbarLogo}>
                 <RiVipCrownFill className={styles.navbarIcon} />
                 <a>Company Name</a>
@@ -32,7 +32,7 @@ function Footer() {
             <div className={styles.list1}>
               <h6 className={styles.heading}>Services</h6>
               <ul>
-                <Link href='/'>
+                <Link href='/' passHref>
                   <li>Beards</li>
                 </Link>
                 <li>Mustashes</li>
@@ -43,7 +43,7 @@ function Footer() {
             <div className={styles.list2}>
               <h6 className={styles.heading}>About</h6>
               <ul>
-                <Link href='/'>
+                <Link href='/' passHref>
                   <li>Our Story</li>
                 </Link>
                 <li>Barbers</li>
@@ -54,7 +54,7 @@ function Footer() {
             <div className={styles.list3}>
               <h6 className={styles.heading}>Contact</h6>
               <ul>
-                <Link href='/'>
+                <Link href='/' passHref>
                   <li>Address</li>
                 </Link>
                 <li>Email</li>
@@ -69,8 +69,10 @@ function Footer() {
           <small>
             Company Name {new Date().getFullYear()} &copy; - All Rights Reserved
             || Designed/Developed by{" "}
-            <Link href='https://chrisware.io'>
-              <a className={styles.cw} target='_blank'>Chris Ware</a>
+            <Link href='https://chrisware.io' passHref>
+              <a className={styles.cw} target='_blank'>
+                Chris Ware
+              </a>
             </Link>
           </small>
         </div>
