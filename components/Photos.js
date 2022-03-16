@@ -30,21 +30,15 @@ function Photos() {
           transition={{ type: "tween", duration: 0.3 }}
           className={styles.topContainer}
         >
-          <motion.h2
-            variants={slideLeft}
-            animate={controls}
-            transition={{ duration: 0.3 }}
-            className={styles.heading}
-          >
-            Our Work
-          </motion.h2>
-          <motion.p
-            variants={slideLeft}
-            animate={controls}
-            transition={{ duration: 0.3 }}
-          >
-            What We're Capable of
-          </motion.p>
+          <h2 className={styles.heading}>Our Work</h2>
+          <div className={styles.btnContainer}>
+            <Link href='/gallery'>
+              <span className={styles.link}>
+                <a>Read More</a>
+                <CgArrowLongRight className={styles.icon} />
+              </span>
+            </Link>
+          </div>
         </motion.div>
         <motion.div
           variants={slideLeft}

@@ -15,7 +15,7 @@ function Prefooter({ text }) {
           <Button text='Call' href='tel:602-775-8941' color='primary' btnSz='large' />
           <Button
             text='Contact'
-            href='/'
+            href='/#contact'
             color='primaryOutline2'
             btnSz='large'
           />

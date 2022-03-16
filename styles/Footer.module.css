@@ -195,4 +195,8 @@
     .footerTopContent3 {
         display: none;
     }
+
+    .footerRight {
+        gap: 1rem;
+    }
 }

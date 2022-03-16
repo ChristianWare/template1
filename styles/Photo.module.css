@@ -37,13 +37,30 @@
     padding-right: 1rem;
 }
 
-.topContainer p {
-    padding-left: 1rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1rem;
-    color: var(--accent1);
+.btnContainer {
+    display: flex;
+    margin-bottom: 3rem;
     background-color: var(--accent4);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 4rem;
+    color: var(--accent1) !important;
+}
+
+
 
 .boxContainer {
     display: grid;

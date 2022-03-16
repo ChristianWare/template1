@@ -19,12 +19,12 @@ function services() {
 
   return (
     <div className={styles.container} ref={element}>
-      <div className={styles.servicesContainer}>
-        <motion.div
-          animate={{ opacity: 1, transition: { duration: 1 } }}
-          initial={{ opacity: 0 }}
-          className={styles.topContent}
-        >
+      <motion.div
+        animate={{ opacity: 1, transition: { duration: 1 } }}
+        initial={{ opacity: 0 }}
+        className={styles.servicesContainer}
+      >
+        <div className={styles.topContent}>
           <div className={styles.topLeft}>
             <h1 className={styles.heading}>
               Premium Quality Services & Price List.
@@ -51,7 +51,7 @@ function services() {
               <Image src={b9} objectFit='cover' width={500} height={500} />
             </div>
           </motion.div>
-        </motion.div>
+        </div>
         <h2 className={styles.sectionHeader} id='haircuts'>
           Hair Cuts
         </h2>
@@ -122,7 +122,7 @@ function services() {
           </div>
         </div>
         <Prefooter text='Questions? Give Us A Call!' />
-      </div>
+      </motion.div>
     </div>
   );
 }

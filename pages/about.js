@@ -11,10 +11,10 @@ function about() {
 
   return (
     <div className={styles.container}>
-      <section className={styles.servicesContainer}>
-        <motion.div
+      <motion.section
           animate={{ opacity: 1, transition: { duration: 1 } }}
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0 }} className={styles.servicesContainer}>
+        <div
           className={styles.topContent}>
           <h1 className={styles.heading}>About Us.</h1>
           <h5 lang='en'>
@@ -25,7 +25,7 @@ function about() {
             inclusive and welcoming environment for every client and member of
             our team.
           </h5>
-        </motion.div>
+        </div>
 
         <div className={styles.contentbottom}>
           <div className={styles.left}>
@@ -88,7 +88,7 @@ function about() {
           </div>
         </div>
         <Prefooter text='Call Us to Learn More!' />
-      </section>
+      </motion.section>
     </div>
   );
 }

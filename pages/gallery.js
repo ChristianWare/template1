@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styles from "../styles/gallery.module.css";
 import Prefooter from "../components/Prefooter";
 import { motion } from "framer-motion";
@@ -6,9 +5,6 @@ import { images } from "../src/data";
 import Image from "next/image";
 
 function gallery() {
-  const [tag, setTag] = useState("all");
-  const [filteredImages, setFilteredImages] = useState([]);
-
   return (
     <div className={styles.container}>
       <section className={styles.galleryContainer}>
@@ -25,8 +21,10 @@ function gallery() {
             the best clients that any barber can ask for.
           </h5>
         </motion.div>
-
-        <div>
+      
+        <motion.div
+          animate={{ opacity: 1, transition: { duration: 1 } }}
+          initial={{ opacity: 0 }} className={styles.map}>
           {images.map((img) => {
             const { id, imageName, tag } = img;
             return (
@@ -35,16 +33,15 @@ function gallery() {
                   <Image
                     src={`/images/${imageName}`}
                     alt={imageName}
-                    width={300}
-                    height={300}
-                    ayout='fill'
+                    layout='fill'
                     objectFit='cover'
+                    className={styles.img}
                   />
                 </div>
               </article>
             );
           })}
-        </div>
+        </motion.div>
 
         <Prefooter text='picture perfect!' />
       </section>
