@@ -131,7 +131,7 @@
     margin-bottom: 3rem;
 }
 
-.formBox span {
+.formBox label {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -142,16 +142,44 @@
     color: rgba(245, 230, 202, 0.3);
 }
 
-.inputBox50 input:focus ~ span,
-.inputBox50 input:valid ~ span,
-.inputBox100 textarea:focus~span,
-.inputBox100 textarea:valid~span {
+.inputBox50 input:focus ~ label,
+.inputBox50 input:valid ~ label,
+.inputBox100 textarea:focus~label,
+.inputBox100 textarea:valid~label {
     transform: translateY(-20px);
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 1px;
     color: var(--accent3);
     font-weight: 500;
+}
+
+.tertiary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    color: var(--accent4);
+    border-radius: 0px 0px 25px 0px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    padding: 15px 45px;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 5;
+    background-color: var(--accent3);
+    color: var(--accent1);
+    border: solid 2px var(--accent3);
+    cursor: pointer;
+}
+
+.tertiary:hover {
+    background-color: var(--accent1);
+    color: var(--accent3);
 }
 
 @media screen and (max-width: 1020px) {

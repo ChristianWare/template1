@@ -1,6 +1,5 @@
-import React, { FormEvent } from "react";
+import React, { useState } from "react";
 import styles from "../styles/ContactSection.module.css";
-import Button from "./utils/Button";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneForward } from "react-icons/bs";
@@ -9,10 +8,64 @@ import { BsInstagram } from "react-icons/bs";
 import { FiYoutube } from "react-icons/fi";
 
 function ContactSection() {
-  const formId = "k6f9KfSr";
-  const formSparkUrl = `https://submit-form.com/${formId}`;
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
-  // const submitForm();
+  const [form, setForm] = useState("");
+
+  const handleChange = (e) => {
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
+  };
+
+  const onSubmitForm = async (e) => {
+    e.preventDefault();
+
+    if (inputs.name && inputs.email && inputs.phone && inputs.message) {
+      setForm({ state: "loading" });
+      try {
+        const res = await fetch(`api/contact`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(inputs),
+        });
+
+        const { error } = await res.json();
+
+        if (error) {
+          setForm({
+            state: "error",
+            message: error,
+          });
+          return;
+        }
+
+        setForm({
+          state: "success",
+          message: "Your message was sent successfully.",
+        });
+        setInputs({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } catch (error) {
+        setForm({
+          state: "error",
+          message: "Something went wrong",
+        });
+      }
+    }
+  };
 
   return (
     <section className={styles.contactContainer} id='contact'>
@@ -59,30 +112,56 @@ function ContactSection() {
         </div>
         <div className={styles.contactForm}>
           <h2>Send A Message</h2>
-          <form className={styles.formBox}>
+          <form className={styles.formBox} onSubmit={(e) => onSubmitForm(e)}>
             <div className={styles.inputBox50}>
-              <input type='text' required />
-              <span>First Name</span>
+              <input
+                id='name'
+                value={inputs.name}
+                onChange={handleChange}
+                type='text'
+                required
+              />
+              <label htmlFor='first'>Name</label>
             </div>
             <div className={styles.inputBox50}>
-              <input type='text' required />
-              <span>Last Name</span>
+              <input
+                id='email'
+                value={inputs.email}
+                onChange={handleChange}
+                type='text'
+                required
+              />
+              <label htmlFor='email'>Email Address</label>
             </div>
             <div className={styles.inputBox50}>
-              <input type='email' required />
-              <span>Email Address</span>
-            </div>
-            <div className={styles.inputBox50}>
-              <input type='text' required />
-              <span>Phone #</span>
+              <input
+                id='phone'
+                value={inputs.phone}
+                onChange={handleChange}
+                type='text'
+              required
+              />
+              <label htmlFor='phone'>Phone #</label>
             </div>
             <div className={styles.inputBox100}>
-              <textarea required></textarea>
-              <span>Your Message Here...</span>
+              <textarea
+                id='message'
+                value={inputs.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+              <label htmlFor='message'>Your Message Here...</label>
             </div>
             <div className={styles.btnContainer}>
-              <Button text='Submit' color='tertiary' />
+              <button className={styles.tertiary}>Submit</button>
             </div>
+            {form.state === "loading" ? (
+              <div className={styles.msg}>Sending....</div>
+            ) : form.state === "error" ? (
+              <div className={styles.msg}>{form.message}</div>
+            ) : (
+              form.state === "success" && <div className={styles.msg}>Sent successfully</div>
+            )}
           </form>
         </div>
       </div>
