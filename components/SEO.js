@@ -1,7 +1,7 @@
 import Head from "next/head"
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
-function SEO({ title, description, keywords }) {
+function SEO({ title, description, keywords, image }) {
   return (
     <div>
       <Head>

@@ -6,10 +6,16 @@ import b16 from "../public/images/b16.jpg";
 import b17 from "../public/images/b12.jpg";
 import Prefooter from "../components/Prefooter";
 import { motion } from "framer-motion";
+import 
 
 function about() {
 
   return (
+    <>
+    <SEO
+        title='Comany Name || About Us'
+        description='Welcome to the About US Page of XYZ. Learn more about our history and our barbers.'
+      />
     <div className={styles.container}>
       <motion.section
           animate={{ opacity: 1, transition: { duration: 1 } }}
@@ -90,6 +96,7 @@ function about() {
         <Prefooter text='Call Us to Learn More!' />
       </motion.section>
     </div>
+    </>
   );
 }
 
