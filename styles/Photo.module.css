@@ -60,6 +60,11 @@
     color: var(--accent4);
 }
 
+.icon1 {
+    font-size: 4rem;
+    color: var(--accent1);
+}
+
 .boxContainer {
     display: grid;
     grid-gap: 1rem;

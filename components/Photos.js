@@ -35,7 +35,7 @@ function Photos() {
             <Link href='/gallery'>
               <span className={styles.link}>
                 <a>Read More</a>
-                <CgArrowLongRight className={styles.icon} />
+                <CgArrowLongRight className={styles.icon1} />
               </span>
             </Link>
           </div>
