@@ -9,11 +9,11 @@ import b5 from "../public/images/b5.jpg";
 import b6 from "../public/images/b6.jpg";
 import b7 from "../public/images/b7.jpg";
 import { motion } from "framer-motion";
-import { UseScroll } from "./UseScroll";
+import { useScroll } from "./useScroll";
 import { topContainerAnimation, slideLeft, slideRight } from "./Animation";
 
 function Photos() {
-  const [element, controls] = UseScroll();
+  const [element, controls] = useScroll();
 
   return (
     <div className={styles.container} ref={element}>

@@ -7,10 +7,10 @@ import child from "../public/images/child.svg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { reveal, slideLeft, slideRight, cardAnimation } from "./Animation";
 import { motion } from "framer-motion";
-import { UseScroll } from "./UseScroll";
+import { useScroll } from "./useScroll";
 
 function ServicesSection() {
-  const [element, controls] = UseScroll();
+  const [element, controls] = useScroll();
 
   return (
     <div className={styles.container}>

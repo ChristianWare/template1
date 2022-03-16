@@ -3,11 +3,11 @@ import styles from "../styles/TestimonialSection.module.css";
 import b12 from "../public/images/b12.jpg";
 import { reveal } from "./Animation";
 import { motion } from "framer-motion";
-import { UseScroll } from "./UseScroll";
+import { useScroll } from "./useScroll";
 
 
 function TestimonialSection() {
-  const [element, controls] = UseScroll();
+  const [element, controls] = useScroll();
 
   return (
     <section className={styles.testContainer} id='testimonials' ref={element}>

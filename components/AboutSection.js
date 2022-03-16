@@ -4,11 +4,11 @@ import { CgArrowLongRight } from "react-icons/cg";
 import styles from "../styles/AboutSection.module.css";
 import b6 from "../public/images/b6.jpg";
 import { motion } from "framer-motion";
-import { UseScroll } from "./UseScroll";
+import { useScroll } from "./useScroll";
 import { topContainerAnimation, slideLeft, slideRight } from "./Animation";
 
 function AboutSection() {
-  const [element, controls] = UseScroll();
+  const [element, controls] = useScroll();
 
   return (
     <div className={styles.container} ref={element}>

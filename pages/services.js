@@ -12,11 +12,11 @@ import b9 from "../public/images/b9.jpg";
 import Prefooter from "../components/Prefooter";
 import { motion } from "framer-motion";
 import { imageAnimation } from "../components/Animation";
-import { UseScroll } from "../components/UseScroll";
+import { useScroll } from "../components/useScroll";
 import SEO from "../components/SEO";
 
 function services() {
-  const [element, controls] = UseScroll();
+  const [element, controls] = useScroll();
 
   return (
     <>
