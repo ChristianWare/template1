@@ -16,7 +16,10 @@ function Hero() {
 
   return (
     <>
-      <SEO title="Comany Name" description='Welcome to the homepage of XYZ, the only place to get all of your XYZ Needs.' />
+      <SEO
+        title='Comany Name'
+        description='Welcome to the homepage of XYZ, the only place to get all of your XYZ Needs.'
+      />
       <div className={styles.container} ref={element}>
         <motion.header
           variants={topContainerAnimation}
@@ -38,6 +41,7 @@ function Hero() {
                 related services that you do and include the city, state of your
                 service area.
               </h5>
+  
               <div className={styles.infoBox}>
                 <p className={styles.hours}>Monday - Saturday 9AM - 6PM</p>
                 <a href={map} target='_blank'>
@@ -75,7 +79,6 @@ function Hero() {
                   width={400}
                   height={500}
                   objectFit='cover'
-                  className={styles.heroImage}
                 />
               </motion.picture>
             </div>

@@ -104,6 +104,11 @@
     padding: 0.5rem;
 }
 
+.cw {
+    color: var(--accent3);
+    opacity: 1;
+}
+
 @media screen and (max-width: 1060px) {
     .footerTopContent h5 {
         width: 100%;

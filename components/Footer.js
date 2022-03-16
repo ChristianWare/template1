@@ -8,7 +8,6 @@ import { FiYoutube } from "react-icons/fi";
 function Footer() {
   return (
     <section className={styles.footerContainer}>
-      
       <footer className={styles.footerBottom}>
         <div className={styles.footerContent}>
           <div className={styles.footerLeft}>
@@ -33,8 +32,8 @@ function Footer() {
             <div className={styles.list1}>
               <h6 className={styles.heading}>Services</h6>
               <ul>
-              <Link href='/'>
-                <li>Beards</li>
+                <Link href='/'>
+                  <li>Beards</li>
                 </Link>
                 <li>Mustashes</li>
                 <li>Hair Cuts</li>
@@ -44,8 +43,8 @@ function Footer() {
             <div className={styles.list2}>
               <h6 className={styles.heading}>About</h6>
               <ul>
-              <Link href='/'>
-                <li>Our Story</li>
+                <Link href='/'>
+                  <li>Our Story</li>
                 </Link>
                 <li>Barbers</li>
                 <li>Location</li>
@@ -55,8 +54,8 @@ function Footer() {
             <div className={styles.list3}>
               <h6 className={styles.heading}>Contact</h6>
               <ul>
-              <Link href='/'>
-                <li>Address</li>
+                <Link href='/'>
+                  <li>Address</li>
                 </Link>
                 <li>Email</li>
                 <li>Phone</li>
@@ -69,6 +68,10 @@ function Footer() {
         <div className={styles.copyrightContainer}>
           <small>
             Company Name {new Date().getFullYear()} &copy; - All Rights Reserved
+            || Designed/Developed by{" "}
+            <Link href='https://chrisware.io'>
+              <a className={styles.cw} target='_blank'>Chris Ware</a>
+            </Link>
           </small>
         </div>
       </footer>
