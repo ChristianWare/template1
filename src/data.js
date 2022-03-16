@@ -192,3 +192,85 @@ export const childrenRight = [
     price: "$25",
   },
 ];
+export const images = [
+  {
+    id: 37,
+    imageName: "b1.jpg",
+    tag: "free",
+  },
+  {
+    id: 38,
+    imageName: "b2.jpg",
+    tag: "new",
+  },
+  {
+    id: 39,
+    imageName: "b3.jpg",
+    tag: "pro",
+  },
+  {
+    id: 40,
+    imageName: "b4.jpg",
+    tag: "free",
+  },
+  {
+    id: 41,
+    imageName: "b5.jpg",
+    tag: "new",
+  },
+  {
+    id: 42,
+    imageName: "b6.jpg",
+    tag: "pro",
+  },
+  {
+    id: 43,
+    imageName: "b7.jpg",
+    tag: "free",
+  },
+  {
+    id: 44,
+    imageName: "b8.jpg",
+    tag: "new",
+  },
+  {
+    id: 45,
+    imageName: "b9.jpg",
+    tag: "pro",
+  },
+  {
+    id: 46,
+    imageName: "b10.jpg",
+    tag: "free",
+  },
+  {
+    id: 47,
+    imageName: "b11.jpg",
+    tag: "new",
+  },
+  {
+    id: 48,
+    imageName: "b12.jpg",
+    tag: "pro",
+  },
+  {
+    id: 49,
+    imageName: "b13.jpg",
+    tag: "free",
+  },
+  {
+    id: 50,
+    imageName: "b14.jpg",
+    tag: "new",
+  },
+  {
+    id: 51,
+    imageName: "b15.jpg",
+    tag: "pro",
+  },
+  {
+    id: 52,
+    imageName: "b16.jpg",
+    tag: "free",
+  },
+];

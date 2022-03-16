@@ -11,7 +11,7 @@ import {
 import b9 from "../public/images/b9.jpg";
 import Prefooter from "../components/Prefooter";
 import { motion } from "framer-motion";
-import { topContainerAnimation, imageAnimation } from "../components/Animation";
+import { imageAnimation } from "../components/Animation";
 import { useScroll } from "../components/useScroll";
 
 function services() {
@@ -19,12 +19,7 @@ function services() {
 
   return (
     <div className={styles.container} ref={element}>
-      <motion.div
-        variants={topContainerAnimation}
-        animate={controls}
-        transition={{ duration: 0.3 }}
-        className={styles.servicesContainer}
-      >
+      <div className={styles.servicesContainer}>
         <motion.div
           animate={{ opacity: 1, transition: { duration: 1 } }}
           initial={{ opacity: 0 }}
@@ -127,7 +122,7 @@ function services() {
           </div>
         </div>
         <Prefooter text='Questions? Give Us A Call!' />
-      </motion.div>
+      </div>
     </div>
   );
 }

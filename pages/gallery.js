@@ -1,8 +1,14 @@
+import React, { useState } from "react";
 import styles from "../styles/gallery.module.css";
 import Prefooter from "../components/Prefooter";
 import { motion } from "framer-motion";
+import { images } from "../src/data";
+import Image from "next/image";
 
 function gallery() {
+  const [tag, setTag] = useState("all");
+  const [filteredImages, setFilteredImages] = useState([]);
+
   return (
     <div className={styles.container}>
       <section className={styles.galleryContainer}>
@@ -13,14 +19,32 @@ function gallery() {
         >
           <h1 className={styles.heading}>Gallery.</h1>
           <h5 lang='en'>
-            We believe that going to the barber shop should be more than an
-            errand. It should be an experience. It’s important to us that you
-            get a great haircut, receive remarkable service and build lasting
-            relationships in a comfortable space. We are committed to being an
-            inclusive and welcoming environment for every client and member of
-            our team.
+            Here are some examples of our work. We are pround to show the work
+            that we have done over the years. Thank you to all of our loyal
+            clients who make all of this possible. Below you find some images of
+            the best clients that any barber can ask for.
           </h5>
         </motion.div>
+
+        <div>
+          {images.map((img) => {
+            const { id, imageName, tag } = img;
+            return (
+              <article key={id}>
+                <div className={styles.photoContainer}>
+                  <Image
+                    src={`/images/${imageName}`}
+                    alt={imageName}
+                    width={300}
+                    height={300}
+                    ayout='fill'
+                    objectFit='cover'
+                  />
+                </div>
+              </article>
+            );
+          })}
+        </div>
 
         <Prefooter text='picture perfect!' />
       </section>
