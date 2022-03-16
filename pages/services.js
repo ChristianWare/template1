@@ -27,7 +27,9 @@ function services() {
       >
         <motion.div
           animate={{ opacity: 1, transition: { duration: 1 } }}
-          initial={{ opacity: 0 }} className={styles.topContent}>
+          initial={{ opacity: 0 }}
+          className={styles.topContent}
+        >
           <div className={styles.topLeft}>
             <h1 className={styles.heading}>
               Premium Quality Services & Price List.
@@ -40,13 +42,17 @@ function services() {
             </p>
           </div>
           <motion.div
-              variants={imageAnimation}
-              animate={controls}
-              transition={{ duration: .5, type: 'spring', stiffness: 120 }} className={styles.topRight}>
+            variants={imageAnimation}
+            animate={controls}
+            transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
+            className={styles.topRight}
+          >
             <div
               variants={imageAnimation}
               animate={controls}
-              transition={{ duration: .5, type: 'spring', stiffness: 120 }} className={styles.topImgContainer}>
+              transition={{ duration: 0.5, type: "spring", stiffness: 120 }}
+              className={styles.topImgContainer}
+            >
               <Image src={b9} objectFit='cover' width={500} height={500} />
             </div>
           </motion.div>

@@ -7,7 +7,6 @@ import { BsTelephoneForward } from "react-icons/bs";
 import { GrFacebookOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
 import { FiYoutube } from "react-icons/fi";
-import axios from "axios";
 
 function ContactSection() {
   const formId = "k6f9KfSr";

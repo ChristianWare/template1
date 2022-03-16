@@ -34,12 +34,7 @@ function ServicesSection() {
             </span>
           </Link>
         </motion.div>
-        <div
-          // animate={controls}
-          // variants={reveal}
-          // transition={{ delay: 0.1, stiffness: 300 }}
-          className={styles.bottomContent}
-        >
+        <div className={styles.bottomContent}>
           <motion.div
             variants={slideLeft}
             animate={controls}
@@ -58,7 +53,9 @@ function ServicesSection() {
           <motion.div
             variants={cardAnimation}
             animate={controls}
-            transition={{ type: "tween", duration: 0.3 }} className={styles.cardTwo}>
+            transition={{ type: "tween", duration: 0.3 }}
+            className={styles.cardTwo}
+          >
             <h4 className={styles.cardheading}>Beards</h4>
             <p className={styles.cardDescription} lang='en'>
               Beard grooming has never been so easy. Let a professional do it,
@@ -71,7 +68,9 @@ function ServicesSection() {
           <motion.div
             variants={slideRight}
             animate={controls}
-            transition={{ type: "tween", duration: 0.3 }} className={styles.cardThree}>
+            transition={{ type: "tween", duration: 0.3 }}
+            className={styles.cardThree}
+          >
             <h4 className={styles.cardheading}>Children</h4>
             <p className={styles.cardDescription} lang='en'>
               Kids welcome! We will work with you and your children to give them
