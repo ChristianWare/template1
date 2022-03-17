@@ -26,7 +26,6 @@
 
 .description {
     width: 80%;
-    /* hyphens: auto; */
     color: var(--accent1);
     font-weight: 400;
     font-size: 2rem;
@@ -190,12 +189,6 @@
        
     .imageContainer2 {
         margin-top: 2rem;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .btnContainer {
-        gap: 2rem;
     }
 }
 
