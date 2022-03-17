@@ -7,7 +7,7 @@ import SEO from "./SEO";
 
 function Hero() {
   const map =
-    "https://www.google.com/maps/place/5100+N+99th+Ave,+Phoenix,+AZ+85037/@33.509981,-112.2757085,17z/data=!3m1!4b1!4m5!3m4!1s0x872b4172f9f02973:0x4dc3ba54f817a0fa!8m2!3d33.509981!4d-112.2735198";
+    "https://www.google.com/maps/place/13011+W+Greenway+Rd,+El+Mirage,+AZ+85335/@33.6229949,-112.3417799,17z/data=!3m1!4b1!4m5!3m4!1s0x872b453350e8389d:0xf17ab92194cbe349!8m2!3d33.6229949!4d-112.3395912";
 
   return (
     <>
@@ -24,21 +24,20 @@ function Hero() {
           >
             <div className={styles.contentLeft}>
               <h1 className={styles.heading}>
-                Main headline, put top keyword here.
+                Welcome to Liberty Barber Shop.
               </h1>
               <h5 className={styles.description} lang='en'>
-                Expand on the keyword with more keywords and add a list of
-                related services that you do and include the city, state of your
-                service area.
+                The only Barbershop in The Phoenix Area to get the best Fades
+                and Flat Tops.
               </h5>
 
               <div className={styles.infoBox}>
                 <p className={styles.hours}>Monday - Saturday 9AM - 6PM</p>
                 <a href={map} target='_blank' rel='noreferrer'>
                   <address className={styles.address}>
-                    5100 w Camelback Rd
+                    13011 W Greenway Rd
                     <br />
-                    Phoenix, AZ 85334
+                    El Mirage, AZ 85335
                   </address>
                 </a>
               </div>
