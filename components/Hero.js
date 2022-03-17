@@ -24,7 +24,7 @@ function Hero() {
           >
             <div className={styles.contentLeft}>
               <h1 className={styles.heading}>
-                WELCOME TO Matts Barber Parlor.
+                WELCOME TO Crew Cuts BARBER SHOP.
               </h1>
               <h5 className={styles.description} lang='en'>
                 The only Barbershop in The Phoenix Area to get the best Fades
