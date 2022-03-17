@@ -24,11 +24,7 @@ function Hero() {
           >
             <div className={styles.contentLeft}>
               <h1 className={styles.heading}>
-<<<<<<< HEAD
                 WELCOME TO Crew Cuts BARBER SHOP.
-=======
-                Welcome to Liberty Barber Shop.
->>>>>>> 55469fcd87bff2f78a308001ebc2845dfecab59e
               </h1>
               <h5 className={styles.description} lang='en'>
                 The only Barbershop in The Phoenix Area to get the best Fades
