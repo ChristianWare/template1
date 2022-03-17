@@ -1,7 +1,6 @@
 .servicesContainer {
     display: flex;
     flex-direction: column;
-    /* gap: 2rem; */
 }
 
 .topContent {
@@ -87,9 +86,6 @@
 .contentRightA {
     position: relative;
     z-index: 1;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .look {
@@ -128,6 +124,7 @@
     width: 50%;
     margin-top: 1rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .imageBox {
@@ -159,7 +156,6 @@
     padding: 1rem;
     padding-bottom: .5rem;
 }
-
 
 @media screen and (max-width: 953px) {
     .topContent {
@@ -223,6 +219,26 @@
 @media screen and (max-width: 570px) {
     .heading {
         font-size: 4.5rem;
+        text-align: left;
+    }
+
+    .topContent h5 {
+        text-align: left;
+    }
+
+    .subHeading {
+        text-align: center !important;
+    }
+
+    .subHeadingDescription {
+        text-align: left;
+    }
+
+    .subHeading2 {
+        text-align: right !important;
+    }
+    .subP {
+        text-align: right;
     }
 
     .imageBox {

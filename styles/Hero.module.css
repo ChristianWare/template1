@@ -26,7 +26,7 @@
 
 .description {
     width: 80%;
-    hyphens: auto;
+    /* hyphens: auto; */
     color: var(--accent1);
     font-weight: 400;
     font-size: 2rem;
@@ -53,6 +53,7 @@
     font-size: 2rem;
     font-style: normal;
     cursor: pointer;
+    text-align-last: left;
 }
 
 .content1B {
@@ -68,7 +69,6 @@
     align-items: center;
     gap: 4rem;
 }
-
 
 .contentRight {
      flex: 1;
@@ -154,13 +154,16 @@
 
 @media screen and (max-width: 550px) {
     .btnContainer {
-        /* flex-direction: column;
-        align-items: flex-start; */
         gap: 3rem;
     }
+
 }
 
 @media screen and (max-width: 570px) {
+    .content {
+        padding: 2rem;
+    }
+    
     .imageContainer2::after {
         bottom: -30px;
         left: -30px;
@@ -169,18 +172,25 @@
     .heading {
         font-size: 4.5rem;
     }
+
+    .contentLeft {
+        align-items: flex-start;
+    }
+
+    .description,
+    .heading {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .content {
-        padding: 0rem;
+        padding: 1rem;
     }
-    
+       
     .imageContainer2 {
         margin-top: 2rem;
     }
-
-
 }
 
 @media screen and (max-width: 450px) {

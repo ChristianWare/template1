@@ -68,6 +68,13 @@
     }
 }
 
+@media screen and (max-width: 570px) {
+    .heading,
+    .topContent h5 {
+        text-align: left;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .map {
         grid-template-columns: repeat(1, 1fr);

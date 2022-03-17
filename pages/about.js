@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 import SEO from '../components/SEO'
 
 function about() {
-
   return (
     <>
       <SEO
@@ -63,12 +62,14 @@ function about() {
             </div>
           </div>
           <div className={styles.contentBottom2}>
-            <h2 className={styles.subHeading2}>Our People</h2>
-            <p className={styles.subP}>
-              Our shop has a team of dedicated Barbers who&apos;s ambition is
-              helping their clients increase their confidence by helping them
-              disover thier look. Let&apos;s meet them:
-            </p>
+            <div className={styles.ourppl}>
+              <h2 className={styles.subHeading2}>Our People</h2>
+              <p className={styles.subP}>
+                Our shop has a team of dedicated Barbers who&apos;s ambition is
+                helping their clients increase their confidence by helping them
+                disover thier look. Let&apos;s meet them:
+              </p>
+            </div>
 
             <div className={styles.contentbottom3}>
               <div className={styles.left}>
