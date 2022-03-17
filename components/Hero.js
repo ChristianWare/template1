@@ -35,7 +35,7 @@ function Hero() {
                 <p className={styles.hours}>Monday - Saturday 9AM - 6PM</p>
                 <a href={map} target='_blank' rel='noreferrer'>
                   <address className={styles.address}>
-                    401 N 27th Ave
+                   Streen Name And Number
                     <br /> Phoenix, AZ 85009
                   </address>
                 </a>
