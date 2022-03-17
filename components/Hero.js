@@ -35,9 +35,8 @@ function Hero() {
                 <p className={styles.hours}>Monday - Saturday 9AM - 6PM</p>
                 <a href={map} target='_blank' rel='noreferrer'>
                   <address className={styles.address}>
-                    13011 W Greenway Rd
-                    <br />
-                    El Mirage, AZ 85335
+                    401 N 27th Ave
+                    <br /> Phoenix, AZ 85009
                   </address>
                 </a>
               </div>
