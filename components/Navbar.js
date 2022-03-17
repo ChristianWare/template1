@@ -30,11 +30,7 @@ function Navbar() {
         <Link href='/' passHref>
           <span className={styles.navbarLogo}>
             <RiVipCrownFill className={styles.navbarIcon} />
-<<<<<<< HEAD
             <a>Crew Cuts</a>
-=======
-            <a>Liberty</a>
->>>>>>> 55469fcd87bff2f78a308001ebc2845dfecab59e
           </span>
         </Link>
         <ul
