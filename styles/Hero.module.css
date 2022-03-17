@@ -142,6 +142,16 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 0rem;
+    }
+
+    .description {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .btnContainer {
         /* flex-direction: column;
