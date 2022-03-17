@@ -19,7 +19,7 @@ function services() {
   return (
     <>
       <SEO
-        title='Comany Name || Services'
+        title='Crew Cuts || Services'
         description='Welcome to the Services of XYZ, take a look at our services and prices.'
       />
       <div className={styles.container}>

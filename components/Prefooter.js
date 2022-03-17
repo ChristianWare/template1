@@ -12,7 +12,12 @@ function Prefooter({ text }) {
       <div className={styles.content}>
         <h5 lang='en'>{text}</h5>
         <div className={styles.btnContainer}>
-          <Button text='Call' href='tel:602-775-8941' color='primary' btnSz='large' />
+          <Button
+            text='Call'
+            href='tel:602-473-0386'
+            color='primary'
+            btnSz='large'
+          />
           <Button
             text='Contact'
             href='/#contact'
@@ -24,13 +29,13 @@ function Prefooter({ text }) {
       <motion.article
         variants={slideLeft}
         animate={controls}
-        transition={{ type: "spring", stiffness: 120}}
+        transition={{ type: "spring", stiffness: 120 }}
         className={styles.content2}
       ></motion.article>
       <motion.article
         variants={slideRight}
         animate={controls}
-        transition={{ type: "spring", stiffness: 120}}
+        transition={{ type: "spring", stiffness: 120 }}
         className={styles.content3}
       ></motion.article>
     </div>

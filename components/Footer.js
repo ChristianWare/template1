@@ -14,7 +14,7 @@ function Footer() {
             <Link href='/' passHref>
               <span className={styles.navbarLogo}>
                 <RiVipCrownFill className={styles.navbarIcon} />
-                <a>Company Name</a>
+                <a>Crew Cuts</a>
               </span>
             </Link>
             <p lang='en'>
@@ -67,8 +67,8 @@ function Footer() {
         <hr />
         <div className={styles.copyrightContainer}>
           <small>
-            Company Name {new Date().getFullYear()} &copy; - All Rights Reserved
-            || Designed/Developed by{" "}
+            Crew Cuts {new Date().getFullYear()} &copy; - All Rights Reserved ||
+            Designed/Developed by{" "}
             <Link href='https://chrisware.io' passHref>
               <a className={styles.cw} target='_blank'>
                 Chris Ware

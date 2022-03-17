@@ -12,7 +12,7 @@ function Hero() {
   return (
     <>
       <SEO
-        title='Comany Name'
+        title='Crew Cuts'
         description='Welcome to the homepage of XYZ, the only place to get all of your XYZ Needs.'
       />
       <div className={styles.container}>
@@ -24,12 +24,11 @@ function Hero() {
           >
             <div className={styles.contentLeft}>
               <h1 className={styles.heading}>
-                Main headline, put top keyword here.
+                WELCOME TO Crew Cuts BARBER SHOP.
               </h1>
               <h5 className={styles.description} lang='en'>
-                Expand on the keyword with more keywords and add a list of
-                related services that you do and include the city, state of your
-                service area.
+                The only Barbershop in The Phoenix Area to get the best Fades
+                and Flat Tops.
               </h5>
 
               <div className={styles.infoBox}>

@@ -30,7 +30,7 @@ function Navbar() {
         <Link href='/' passHref>
           <span className={styles.navbarLogo}>
             <RiVipCrownFill className={styles.navbarIcon} />
-            <a>Company Name</a>
+            <a>Crew Cuts</a>
           </span>
         </Link>
         <ul
@@ -68,8 +68,8 @@ function Navbar() {
           </Link>
           <div className={styles.btnContainerMobile}>
             <Button
-              href='tel:602-775-8941'
-              text='602-775-8941'
+              href='tel:602-473-0386'
+              text='602-473-0386'
               color='primaryOutline2'
               btnSz='large2'
             />
@@ -77,8 +77,8 @@ function Navbar() {
         </ul>
         <div className={styles.btnContainerDesktop}>
           <Button
-            href='tel:602-775-8941'
-            text='602-775-8941'
+            href='tel:602-473-0386'
+            text='602-473-0386'
             color='primaryOutline2'
             btnSz='small'
           />

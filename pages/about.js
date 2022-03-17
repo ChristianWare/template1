@@ -12,7 +12,7 @@ function about() {
   return (
     <>
       <SEO
-        title='Comany Name || About Us'
+        title='Crew Cuts || About Us'
         description='Welcome to the About US Page of XYZ. Learn more about our history and our barbers.'
       />
       <div className={styles.container}>
