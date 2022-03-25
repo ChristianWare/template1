@@ -25,12 +25,15 @@
     background-size: 1rem 1rem;
 }
 
-.topContent h2 {
+.heading{
     text-transform: uppercase;
     background-color: var(--accent4);
     padding: 0 1rem;
     hyphens: auto;
     word-break: break-all;
+    font-family: "KenokyLight";
+    letter-spacing: 2px;
+    font-size: 6rem;
 }
 
 .link {

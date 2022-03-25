@@ -22,11 +22,15 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* overflow: hidden; */
-  /* line-height: 1.8; */
+  line-height: 150%;
   scroll-behavior: smooth;
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: "KenokyLight";
+  src: url("../public/Fonts/KenokyLight.ttf");
 }
 
 html {
@@ -35,7 +39,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  /* background-color: red; */
 }
 
 a {
@@ -77,11 +80,6 @@ p,
 input {
   font-weight: 400;
 }
-
-/* ::selection {
-  color: var(--light);
-  background: var(--accent3);
-} */
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;

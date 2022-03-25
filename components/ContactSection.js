@@ -73,7 +73,7 @@ function ContactSection() {
       <div className={styles.container}>
         <div className={styles.contactInfo}>
           <div className={styles.unnammed}>
-            <h2>Contact Info</h2>
+            <h2 className={styles.heading}>Contact Info</h2>
             <ul className={styles.info}>
               <li>
                 <span>

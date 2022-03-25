@@ -12,7 +12,7 @@ function Hero() {
   return (
     <>
       <SEO
-        title='Crew Cuts'
+        title="Gentelman's"
         description='Welcome to the homepage of XYZ, the only place to get all of your XYZ Needs.'
       />
       <div className={styles.container}>
@@ -23,9 +23,7 @@ function Hero() {
             className={styles.content}
           >
             <div className={styles.contentLeft}>
-              <h1 className={styles.heading}>
-                WELCOME TO Crew Cuts BARBER SHOP.
-              </h1>
+              <h1 className={styles.heading}>WELCOME TO OCTAVIOUS' RAZOR EDGE STUDIO.</h1>
               <h5 className={styles.description} lang='en'>
                 The only Barbershop in The Phoenix Area to get the best Fades
                 and Flat Tops.
@@ -35,8 +33,8 @@ function Hero() {
                 <p className={styles.hours}>Monday - Saturday 9AM - 6PM</p>
                 <a href={map} target='_blank' rel='noreferrer'>
                   <address className={styles.address}>
-                    401 N 27th Ave
-                    <br /> Phoenix, AZ 85009
+                    5100 w Camelback Rd, ste 104
+                    <br /> Phoenix, AZ 85037
                   </address>
                 </a>
               </div>

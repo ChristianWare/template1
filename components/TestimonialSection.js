@@ -10,7 +10,7 @@ function TestimonialSection() {
       <div
         className={styles.topContent}
       >
-        <h2 lang='en'>Reviews</h2>
+        <h2 className={styles.heading} lang='en'>Reviews</h2>
         <span className={styles.link}>
           <a>What People Say About Us</a>
         </span>

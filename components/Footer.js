@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Footer.module.css";
-import { RiVipCrownFill } from "react-icons/ri";
+import { GiRazor } from "react-icons/gi";
 import { GrFacebookOption } from "react-icons/gr";
 import { BsInstagram } from "react-icons/bs";
 import { FiYoutube } from "react-icons/fi";
@@ -13,8 +13,8 @@ function Footer() {
           <div className={styles.footerLeft}>
             <Link href='/' passHref>
               <span className={styles.navbarLogo}>
-                <RiVipCrownFill className={styles.navbarIcon} />
-                <a>Crew Cuts</a>
+                <GiRazor className={styles.navbarIcon} />
+                <a>RAZOR EDGE</a>
               </span>
             </Link>
             <p lang='en'>
@@ -67,8 +67,8 @@ function Footer() {
         <hr />
         <div className={styles.copyrightContainer}>
           <small>
-            Crew Cuts {new Date().getFullYear()} &copy; - All Rights Reserved ||
-            Designed/Developed by{" "}
+            Gentelman's {new Date().getFullYear()} &copy; - All Rights Reserved
+            || Designed/Developed by{" "}
             <Link href='https://chrisware.io' passHref>
               <a className={styles.cw} target='_blank'>
                 Chris Ware

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
-import { RiVipCrownFill } from "react-icons/ri";
+import { GiRazor } from "react-icons/gi";
 import Button from "./utils/Button";
 import { motion } from "framer-motion";
 
@@ -29,8 +29,8 @@ function Navbar() {
       <nav className={styles.navbar}>
         <Link href='/' passHref>
           <span className={styles.navbarLogo}>
-            <RiVipCrownFill className={styles.navbarIcon} />
-            <a>Crew Cuts</a>
+            <GiRazor className={styles.navbarIcon} />
+            <a>RAZOR EDGE</a>
           </span>
         </Link>
         <ul

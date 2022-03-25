@@ -30,7 +30,7 @@ function AboutSection() {
           className={styles.contentRight}
         >
           <div className={styles.contentRightA}>
-            <h2>Our Origin Story</h2>
+            <h2 className={styles.heading}>Our Origin Story</h2>
 
             <div className={styles.btnContainer}>
               <Link href='/about' passHref>

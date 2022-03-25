@@ -35,6 +35,9 @@
     background-color: var(--accent4);
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: "KenokyLight";
+    letter-spacing: 2px;
+    font-size: 6rem;
 }
 
 .btnContainer {
@@ -74,6 +77,13 @@
     grid-template-columns: 50% 30% 20%;
     padding-bottom: 1rem;
     overflow: hidden;
+}
+
+.boxContainer h5,
+.boxContainer2 h5 {
+    font-family: "KenokyLight";
+    letter-spacing: 2px;
+    /* font-size: 6rem; */
 }
 
 .box1 {

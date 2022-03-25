@@ -76,12 +76,15 @@
     justify-content: flex-end;
 }
 
-.contentRightA h2 {
+.heading {
     text-align: right;
     text-transform: uppercase;
     background-color: var(--accent4);
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: "KenokyLight";
+    letter-spacing: 2px;
+    font-size: 6rem;
 }
 
 .contnetRightDesciption {

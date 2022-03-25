@@ -13,6 +13,9 @@
     color: var(--accent1);
     text-transform: uppercase;
     margin-bottom: 3rem;
+     font-family: "KenokyLight";
+     letter-spacing: 3px;
+     font-size: 7rem;
 }
 
 .topContent h5 {

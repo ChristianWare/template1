@@ -28,10 +28,14 @@
     justify-content: space-between;
 }
 
-.contactInfo h2 {
+.heading {
     font-size: 4rem;
     /* font-weight: 500; */
     color: var(--accent1);
+    font-family: "KenokyLight";
+    letter-spacing: 2px;
+    /* font-size: 5rem; */
+    
 }
 
 .info {

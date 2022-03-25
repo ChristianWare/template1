@@ -9,7 +9,7 @@ function gallery() {
   return (
     <>
       <SEO
-        title='Crew Cuts || Gallery'
+        title='Gentelmans || Gallery'
         description='Welcome to the Gallery Page of XYZ. See our work through our photos.'
       />
       <div className={styles.container}>

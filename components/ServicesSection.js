@@ -17,7 +17,7 @@ function ServicesSection() {
         className={styles.servicesContainer}
       >
         <div className={styles.topContent}>
-          <h2>Services</h2>
+          <h2 className={styles.heading}>Services</h2>
           <Link href='/services' passHref>
             <span className={styles.link}>
               <a>See All Services</a>
