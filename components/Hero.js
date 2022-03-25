@@ -10,10 +10,10 @@ function Hero() {
     "https://www.google.com/maps/place/13011+W+Greenway+Rd,+El+Mirage,+AZ+85335/@33.6229949,-112.3417799,17z/data=!3m1!4b1!4m5!3m4!1s0x872b453350e8389d:0xf17ab92194cbe349!8m2!3d33.6229949!4d-112.3395912";
 
   return (
-    <>
+    <> 
       <SEO
         title="Gentelman's"
-        description='Welcome to the homepage of XYZ, the only place to get all of your XYZ Needs.'
+        description='Welcome to the homepage of Razor Edge Studio, the only place to get all of your hair cut Needs.'
       />
       <div className={styles.container}>
         <header className={styles.heroContainer}>
