@@ -25,7 +25,7 @@ function Hero() {
             <div className={styles.contentLeft}>
               <h1 className={styles.heading}>WELCOME TO OCTAVIOUS' RAZOR EDGE STUDIO.</h1>
               <h5 className={styles.description} lang='en'>
-                The only Barbershop in The Phoenix Area to get the best Fades
+                The only Barbershop in The Phoenix area to get the best Fades
                 and Flat Tops.
               </h5>
 
